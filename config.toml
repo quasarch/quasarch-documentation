@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Quasarplane Documentation"
+title = "Quasarch Cloud Documentation"
 
 # Language settings
 contentDir = "content/en"
@@ -61,17 +61,10 @@ id = "UA-00000000-0"
 [languages]
 [languages.en]
 title = "Quasarplane Documentation"
-description = "The Quasarplane Cloud Official Documentation"
+description = "The Quasarplane Official Documentation"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-[languages.no]
-title = "Quasarplane Documentation"
-description = "The Quasarplane Cloud Official Documentation"
-languageName ="Norsk"
-contentDir = "content/no"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
 
 #[languages.fa]
 #title = "Quasarplane Documentation"
@@ -123,9 +116,9 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/Quasarplane-network/support"
+github_repo = "https://github.com/quasarplane-network/support"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/quasarch/Quasarplane-docs"
+github_project_repo = "https://github.com/quasarch/quasarplane-documentation"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -172,8 +165,8 @@ sidebar_search_disable = true
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/quasarch/Quasarplane-docs/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/quasarch/Quasarplane-docs/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/quasarch/quasarplane-documentation/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/quasarch/quasarplane-documentation/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
@@ -190,22 +183,17 @@ enable = false
 #  desc = "Discussion and help from your fellow users"
 [[params.links.user]]
   name ="Twitter"
-  url = "https://twitter.com/Quasarplanenet_"
+  url = "https://twitter.com/quasarch_cloud"
   icon = "fab fa-twitter"
   desc = "Follow us on Twitter to get the latest news!"
 [[params.links.user]]
-  name = "Telegram"
-  url = "https://t.me/QuasarplaneNW"
-  icon = "fab fa-telegram"
-  desc = "Join our telegram!"
-[[params.links.user]]
   name = "GitHub"
-  url = "https://github.com/Quasarplane-network"
+  url = "https://github.com/quasarch"
   icon = "fab fa-github"
-  desc = "Github organization for Quasarplane Network"
+  desc = "Github organization for Quasarch Cloud"
 [[params.links.user]]
   name = "Discord"
-  url = "https://discord.Quasarplane.network/"
+  url = "https://discord.quasarch.cloud/"
   icon = "fab fa-discord"
   desc = "Chat with other project developers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
@@ -232,13 +220,13 @@ enable = false
 
 [[menu.main]]
   name = "GitHub"
-  url = "https://github.com/Quasarplane-network"
+  url = "https://github.com/quasarch"
   pre = "<i class='fa-brands fa-github'></i>"
 [[menu.main]]
   name = "Twitter"
-  url = "https://twitter.com/Quasarplanenet_"
+  url = "https://twitter.com/quasarch_cloud"
   pre = "<i class='fa-brands fa-twitter'></i>"
 [[menu.main]]
   name = "Discord"
-  url = "https://discord.Quasarplane.network/"
+  url = "https://discord.quasarch.network/"
   pre = "<i class='fa-brands fa-discord'></i>"

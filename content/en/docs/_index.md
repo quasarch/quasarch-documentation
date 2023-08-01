@@ -8,8 +8,8 @@ menu:
     weight: 20
 ---
 
-Quasarplane is a control plane for decentralized cloud services.
-It serves as layer to manage and guarantee enterprise-grade properties to decentralized systems.
+Quasarch Cloud is a platform that offers decentralized cloud services to users accross the globe.
+It's great to host Web3 workloads such as DEXs, landing-pages and services, but also great for traditional workloads that benefit from highly available, distributed and censorship resistant cloud services.
 
 {{< rawhtml >}}
 <div style="margin: 64px auto; width: 100%;">
@@ -22,15 +22,15 @@ It serves as layer to manage and guarantee enterprise-grade properties to decent
     </div>
     <div class="landing-box">
       <h5>Blockchain</h5>
-      <p>Are you interested in what role blockchain has in the Akash Network?</p>
+      <p>Are you interested in what role blockchain has in Quasarch Cloud?</p>
       <br>
       <a class="more" href="/tags/blockchain/">Take me there <i class="fa fa-arrow-right"></i></a>
     </div>
     <div class="landing-box">
-      <h5>Architecture</h5>
-      <p>A list of resources that explain Akash's complex distributed systems that span accross the globe.</p>
+      <h5>Developers</h5>
+      <p>A list of resources that for developers.</p>
       <br>
-      <a class="more" href="/categories/architecture/">Take me there <i class="fa fa-arrow-right"></i></a>
+      <a class="more" href="/categories/developers/">Take me there <i class="fa fa-arrow-right"></i></a>
     </div>
   </div>
 </div>
