@@ -1,4 +1,4 @@
-FROM klakegg/hugo:ext-alpine
+FROM klakegg/hugo:ext-ubuntu
 
 COPY . /app/docsy/quasarplane/
 WORKDIR /app/docsy/quasarplane/

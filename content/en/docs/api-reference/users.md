@@ -2,6 +2,7 @@
 title: "Users API"
 linkTitle: "Users API"
 weight: 1
+description: The Users HTTP API provides endpoints for user management and authentication.
 ---
 
 The Users HTTP API provides endpoints for user management and authentication.
