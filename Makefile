@@ -14,7 +14,7 @@ apply:
 
 delete:
 	kubectl delete -f deploy/k8s.yaml
-	kubectl delete secret docker-registry regcred -n docs
+	kubectl delete secret regcred -n docs
 
 run:
 	docker run $(REGISTRY)/quasarch-docs:latest
