@@ -12,7 +12,7 @@ It is important to understand how both of these components work together to make
 
 ## Integrating
 
-Quasarplane was designed with integration enabled from the ground up.
+Quasarplane was designed with integration as an architectural characteristic from the ground up.
 Integration can be done either through our managed service or a self-hosted solution.
 **For a self-hosted solution integration contact the team.**
 
