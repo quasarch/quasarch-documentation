@@ -24,7 +24,7 @@ Whether it's analyzing user behavior on a website, processing sensor data from I
 Big data technologies facilitate the handling of such large volumes of data, and serverless containers enhance the efficiency and scalability of real-time processing tasks.
 Container Service's support of GPUs gives engineers the tools to take on HPC tasks.
 
-## Container Delivery Networks
+## Content Delivery Networks
 
 Decentralized container services can enhance CDNs by deploying containers in various locations across the globe.
 This decentralized approach improves content delivery speeds by serving content from servers that are geographically closer to the end-users.

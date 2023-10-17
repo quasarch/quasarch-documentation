@@ -2,9 +2,10 @@
 ---
 title: "Quasarplane Overview"
 linkTitle: "Quasarplane"
+description: "Overview of the Quasarplane control-plane system."
 ---
 
-Quasarplane is a control plane for decentralized cloud services.
+Quasarplane is a control plane for decentralized cloud services and DePINs.
 It serves as layer to manage and guarantee enterprise-grade properties to decentralized systems.
 
 Quasarplane is the backbone of [Quasarch Console](), providing most of the functionality available on it.

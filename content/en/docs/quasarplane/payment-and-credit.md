@@ -2,6 +2,7 @@
 ---
 title: "Payment & Credit"
 linkTitle: "Payment & Credit"
+description: "How does Quasarplane handle resource payments and user credits.."
 ---
 
 Quasarplane comes with a billing module that enable users to be charged by the resources they consume.

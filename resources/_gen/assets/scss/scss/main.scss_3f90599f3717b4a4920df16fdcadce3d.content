@@ -18676,23 +18676,4 @@ div.drawioframe {
 .td-navbar .navbar-brand svg {
   width: 100%; }
 
-div.landing-box {
-  border: 1px solid #ddd;
-  display: table-cell;
-  padding: 16px;
-  border-radius: 4px;
-  margin: auto 8px;
-  height: 192px;
-  position: relative; }
-  div.landing-box h5, div.landing-box .h5 {
-    font-weight: bold; }
-  div.landing-box p {
-    color: #aaa; }
-  div.landing-box a.more {
-    font-weight: bold;
-    position: absolute;
-    bottom: 12px;
-    float: bottom;
-    color: black; }
-
 /*# sourceMappingURL=main.css.map */

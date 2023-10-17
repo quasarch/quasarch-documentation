@@ -8,31 +8,24 @@ menu:
     weight: 20
 ---
 
-Quasarch Cloud is a platform that offers decentralized cloud services to users accross the globe.
-It's great to host Web3 workloads such as DEXs, landing-pages and services, but also great for traditional workloads that benefit from highly available, distributed and censorship resistant cloud services.
+In the ever-evolving landscape of digital technology, the demand for efficient, secure, and accessible cloud services has reached unprecedented heights.
+Traditional cloud platforms have undoubtedly transformed the way we store, manage, and share data.
+However, with these advancements come challenges, especially concerning centralization, security, and data privacy.
 
-{{< rawhtml >}}
-<div style="margin: 64px auto; width: 100%;">
-  <div style="display:table;border-collapse:separate;border-spacing:16px; table-layout: fixed; width: 100%;">
-    <div class="landing-box">
-      <h5>Guides</h5>
-      <p>Explore our list of available guides. The perfect place if you are looking for a straight path to achieve.</p>
-      <br>
-      <a class="more" href="/categories/guides/">Take me there <i class="fa fa-arrow-right"></i></a>
-    </div>
-    <div class="landing-box">
-      <h5>Blockchain</h5>
-      <p>Are you interested in what role blockchain has in Quasarch Cloud?</p>
-      <br>
-      <a class="more" href="/tags/blockchain/">Take me there <i class="fa fa-arrow-right"></i></a>
-    </div>
-    <div class="landing-box">
-      <h5>Developers</h5>
-      <p>A list of resources that for developers.</p>
-      <br>
-      <a class="more" href="/categories/developers/">Take me there <i class="fa fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-{{< /rawhtml >}}
+Quasarch Console, a revolutionary platform that combines decentralized protocols to offer the next generation of cloud services.
+Quasarch Console stands, together with its partners, at the forefront of the Decentralized Cloud revolution, redefining the way individuals and businesses interact with the digital sphere.
 
+## What is Quasarch Console & Quasarch Cloud?
+
+Quasarch Console is not just another cloud service platform; it represents a paradigm shift in the world of cloud computing.
+Unlike conventional cloud platforms, Quasarch Console leverages the power of decentralized technologies, such as blockchain and peer-to-peer networking, to offer users a truly secure, private, and efficient cloud experience.
+
+At the core of Quasarch's Console offering is our control-plane solution for the Decentralized Cloud.
+Check [Quasarplane Documentation](quasarplane/_index.md) for more details.
+
+These two solutions form the Quasarch Cloud with key features:
+
+1) **Decentralization** - Quasarch Cloud operates on decentralized protocols, eliminating the risks associated with centralized data centers. This decentralization ensures data integrity, reduces downtime, and enhances overall system reliability.
+2) **Privacy** - Quasarch Cloud prioritizes user privacy. By employing a decentralized model, it minimizes the collection of user data, putting control back into the hands of the users. Personal information remains private, and users have the freedom to manage their data as they see fit.
+3) **Scalability** - Quasarch Cloud's decentralized architecture allows for seamless scalability. As the user base grows, the network adapts organically, ensuring optimal performance even during periods of high demand.
+4) **Affordability** - By eliminating the need for costly data centers and intermediaries, Quasarch Cloud offers cost-effective solutions to users. This affordability makes high-quality cloud services accessible to a broader audience, including startups, small businesses, and individual users.
