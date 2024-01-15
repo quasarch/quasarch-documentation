@@ -17,4 +17,4 @@ delete:
 	kubectl delete secret regcred -n docs
 
 run:
-	docker run $(REGISTRY)/quasarch-docs:latest
+	docker run -p 1313:1313 $(REGISTRY)/quasarch-docs:latest
