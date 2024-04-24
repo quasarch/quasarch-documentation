@@ -1,0 +1,397 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quasarplane Documentation – Documentation Overview</title>
+    <link>//localhost:1313/docs/</link>
+    <description>Recent content in Documentation Overview on Quasarplane Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="//localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Set up to use Container Service</title>
+      <link>//localhost:1313/docs/containers/user-guide/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/containers/user-guide/setup/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;sign-up-for-a-quasarch-cloud-account&#34;&gt;Sign up for a Quasarch Cloud account&lt;/h2&gt;
+&lt;p&gt;If you do not have a Quasarch Cloud account, complete the following steps to create one.&lt;/p&gt;
+&lt;p&gt;To sign up for a Quasarch Cloud account&lt;/p&gt;
+&lt;p&gt;Visit &lt;a href=&#34;https://console.quasarch.cloud/register&#34;&gt;https://console.quasarch.cloud/register&lt;/a&gt;.
+Follow the online instructions.&lt;/p&gt;
+&lt;p&gt;Quasarch Cloud sends you a confirmation email after the sign-up process is complete.
+At any time, you can view your current account activity and manage your account by going to &lt;a href=&#34;https://console.quasarch.cloud&#34;&gt;https://console.quasarch.cloud&lt;/a&gt; and clicking on your profile picture.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Deploying on Container Service</title>
+      <link>//localhost:1313/docs/containers/user-guide/deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/containers/user-guide/deploy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page shows you how to deploy to Container Service a sample container that has already been pushed to a public registry (Docker Hub) in this case.&lt;/p&gt;
+&lt;h2 id=&#34;before-you-begin&#34;&gt;Before you Begin&lt;/h2&gt;
+&lt;p&gt;Make sure you are logged into &lt;a href=&#34;https://console.quasarch.cloud/&#34;&gt;console&lt;/a&gt; and that you have enough credits to continue.
+Be sure to delete all the resources you create after completing this guide so you avoid being charged.&lt;/p&gt;
+&lt;h2 id=&#34;creating-your-container&#34;&gt;Creating your Container&lt;/h2&gt;
+&lt;p&gt;To create a container deployment on Container Service, you&amp;rsquo;ll need to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;From the navigation menu select the &lt;strong&gt;Compute&lt;/strong&gt; dropdown and then click on &lt;strong&gt;Container Service&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Create&lt;/strong&gt; to go to the form to create your container.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;From here you&amp;rsquo;ll have to fill out the container creation form.
+Make sure that you specify a public registry path as &lt;strong&gt;private registries are not yet supported&lt;/strong&gt;.
+Don&amp;rsquo;t forget to include your image tag (when using the latest tag make sure to include &lt;code&gt;latest&lt;/code&gt; in the image).&lt;/p&gt;
+&lt;h3 id=&#34;gpu-settings&#34;&gt;GPU Settings&lt;/h3&gt;
+&lt;p&gt;Container Service supports running containers that leverage GPU support.
+In case you select many different GPU models, your deployment will only run with access to one of those models.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+
+    GPUs can greatly increase the cost of running your container depending on the model.
+
+&lt;/div&gt;
+
+&lt;p&gt;Once you are satisfied with the configuration click on &lt;strong&gt;Create&lt;/strong&gt;.
+This action will redirect you to the container listing page where you&amp;rsquo;ll find your deployment as &lt;em&gt;deploying&lt;/em&gt;.
+Quasarch Console is now waiting for Quasarplane to negotiate and send your container to one of our selected compute providers.
+Once the process is complete you&amp;rsquo;ll see the status of the container has changed to &lt;em&gt;deployed&lt;/em&gt;.
+If something went wrong the container will have its status as &lt;em&gt;failed&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+
+    Currently every container will have its port forwarded to port 80.
+Please make sure you set the &lt;code&gt;port&lt;/code&gt; field correctly to point towards the container&amp;rsquo;s exposed port.
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Use Cases</title>
+      <link>//localhost:1313/docs/containers/use-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/containers/use-cases/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page features Container Service&amp;rsquo;s core use cases.&lt;/p&gt;
+&lt;p&gt;Note that the full range of potential use cases is broader than what is covered here.&lt;/p&gt;
+&lt;h2 id=&#34;websites-and-web-applications&#34;&gt;Websites and Web Applications&lt;/h2&gt;
+&lt;p&gt;Almost every developer will sooner or later need a place to host their website and applications.
+Container Service provides an easy deployment experience at a fraction of the price of centralized competitors.
+It is perfect for developers that want to host their website without going through the burden of configuring a server and avoiding surprise bills from unwanted usage.
+Quasarch will only charge you for the time your run, not the amount of traffic.
+Censorship-resistance let&amp;rsquo;s you freely express yourself without fear of being silenced.&lt;/p&gt;
+&lt;h2 id=&#34;hpc-workloads&#34;&gt;HPC Workloads&lt;/h2&gt;
+&lt;p&gt;In today&amp;rsquo;s data-driven world, businesses and organizations generate and process massive amounts of data in real-time.
+Whether it&amp;rsquo;s analyzing user behavior on a website, processing sensor data from IoT devices, or conducting financial market analysis, real-time data processing is critical for making informed decisions promptly.
+Big data technologies facilitate the handling of such large volumes of data, and serverless containers enhance the efficiency and scalability of real-time processing tasks.
+Container Service&amp;rsquo;s support of GPUs gives engineers the tools to take on HPC tasks.&lt;/p&gt;
+&lt;h2 id=&#34;content-delivery-networks&#34;&gt;Content Delivery Networks&lt;/h2&gt;
+&lt;p&gt;Decentralized container services can enhance CDNs by deploying containers in various locations across the globe.
+This decentralized approach improves content delivery speeds by serving content from servers that are geographically closer to the end-users.
+Container Service&amp;rsquo;s price model can help engineers build a global CDN for a fraction of the cost.&lt;/p&gt;
+&lt;h2 id=&#34;dapps&#34;&gt;DApps&lt;/h2&gt;
+&lt;p&gt;Blockchain-based decentralized applications can utilize container services to manage and run application components.
+Each component of the DApp can be encapsulated within a container, providing isolation and security.
+Blockchain ensures the integrity and decentralization of the application data and transactions.
+Container Service enables web3 developers to deliver on the promise of decentralization by offering a truly decentralized platform to host containerized DApps.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Payment &amp; Credit</title>
+      <link>//localhost:1313/docs/quasarplane/payment-and-credit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/quasarplane/payment-and-credit/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Quasarplane comes with a billing module that enable users to be charged by the resources they consume.
+Due to its decentralized nature and the use of blockchain technologies, the process of billing and distributing credit across users is rather complex.
+When users purchase credit, they want predictability of how many resources they can expect to consume with those credits.
+This proves a challenge when you are working with volatile assets that are usually associated with these decentralized protocols.&lt;/p&gt;
+&lt;p&gt;To help mitigate these risks, Quasarplane will only exchange assets when absolutely required as per the user&amp;rsquo;s actions.
+It will be responsible for storing, securing and transacting the assets.
+Quasarplane contains an algorithm that defines the risk strategy that allows itself to operate efficiently and securely.
+User&amp;rsquo;s will not have any direct holding or management of any assets related to the direct interaction with integrated protocols.
+&lt;strong&gt;They do hold their credits and manage them as they see fit&lt;/strong&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Privacy</title>
+      <link>//localhost:1313/docs/quasarplane/security/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/quasarplane/security/privacy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As a solution that enables Tenants with self-sovereignty over their data, Tenants can choose where they want to run their workloads and store their data.
+Quasarch Cloud Platform can serve as a privacy layer between Tenants and &lt;a href=&#34;//localhost:1313/docs/quasarplane/providers/&#34;&gt;Providers&lt;/a&gt;.
+Providers do not have access to the Quasarch Cloud Platform account that is accessing resources.&lt;/p&gt;
+&lt;h2 id=&#34;compute-providers-data-access&#34;&gt;Compute Providers Data Access&lt;/h2&gt;
+&lt;p&gt;Compute Providers will run Tenant workloads on their infrastructure and by deploying Tenants are trusting them with their data.
+They are required to manage workloads in a secure and responsible way and provide transparency to their Tenants.&lt;/p&gt;
+&lt;p&gt;Compute Providers might have access to the following data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Environment variables&lt;/li&gt;
+&lt;li&gt;Unencrypted files&lt;/li&gt;
+&lt;li&gt;Unencrypted network traffic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is recommended that you design your applications with an emphasis on security whether you are trusting a centralized Cloud Provider or a decentralized Cloud Provider.
+At any time Tenants can query Provider data to help them make informed choices based on their specific requirements for security.
+For more information on what attributes you can have query check the &lt;a href=&#34;../api-reference&#34;&gt;Providers API Reference&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Providers</title>
+      <link>//localhost:1313/docs/quasarplane/providers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/quasarplane/providers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In a Quasarplane environment, Resource Providers, or simply Providers, are entities that contribute computing resources such as processing power (compute), storage, and network bandwidth to the network.
+These resources are collectively utilized to perform various tasks, store data, and run applications.
+Resource providers can be devices (such as computers or servers) connected to the network from individuals or organizations.&lt;/p&gt;
+&lt;p&gt;Quasarplane operates on the principle of distributed computing, where resources are sourced from multiple nodes (computers or servers) spread across the network.
+Unlike traditional centralized cloud services, where resources are provided by a single or a few data centers owned by a specific company, Quasarplane distributes the workload across a vast network of independent participants.&lt;/p&gt;
+&lt;p&gt;Resource providers in Quasarplane play a crucial role in ensuring the availability, reliability, and scalability of the platform.
+Users looking to host applications, store data, or execute tasks can leverage the resources provided by these entities.&lt;/p&gt;
+&lt;h2 id=&#34;tiers&#34;&gt;Tiers&lt;/h2&gt;
+&lt;p&gt;Providers that are onboarded into Quasarplane belong to one of two tiers.
+Each tier is a direct measure of the quality of the services a Provider offers.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Tier 1&lt;/strong&gt; - These providers are audited by external auditors and Quasarch has made due diligence on it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tier 2&lt;/strong&gt; - Providers that have completed the Tier 1 and are direct partners of Quasarch.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tiers serve as incentives for Providers to better their services and begin a partnership relation with Quasarch.
+The more high tier Providers in the platform, the better service Quasarplane can provide which creates a collaborative integration between both entities.&lt;/p&gt;
+&lt;h2 id=&#34;types-of-providers&#34;&gt;Types of Providers&lt;/h2&gt;
+&lt;p&gt;Quasarplane, and by extension the Quasarch Cloud Platform as a whole, support several types of Resource Providers.
+They form the infrastructure layer that will support the cloud services offered by the platform.&lt;/p&gt;
+&lt;h3 id=&#34;compute-providers&#34;&gt;Compute Providers&lt;/h3&gt;
+&lt;p&gt;Compute Providers in Quasarplane are entities that offer computational resources, such as processing power, memory and storage to the platform.
+These resources are used to perform a wide range of tasks, including running applications and processing data.
+Compute providers are a fundamental component of Quasarplane and contribute to the overall computing power and capacity of the platform.&lt;/p&gt;
+&lt;p&gt;Here are a few key points about Compute Providers in Quasarplane:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Decentralized Nature&lt;/strong&gt; - Compute Providers in a Decentralized Cloud Platform such as Quasarplane operate on a peer-to-peer network, where resources are sourced from individual computers or servers connected to the network. This ensures that the computing power is distributed across several entities rather than being concentrated in a few centralized data centers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Sharing&lt;/strong&gt; - Compute Providers share their computational resources, such as CPU cycles, RAM and GPUs, with the network. These resources will be utilized by developers, businesses, or other users to run applications and perform various computing tasks through Quasarplane&amp;rsquo;s Cloud Services.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Incentives&lt;/strong&gt; - Compute Providers are typically incentivized for their contributions to the network. These incentives encourage more individuals and organizations to participate, leading to a larger and more powerful Quasarplane.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security and Trust&lt;/strong&gt; - Quasarplane employs encryption and cryptographic techniques to ensure the security and privacy of computations and data processing performed by Compute Providers. This is essential to maintain the integrity of applications and trust in the platform.
+In summary, Compute Providers in Quasarplane contribute their computational resources to the network, enabling a distributed, secure, and efficient computing infrastructure for various Quasarplane cloud services.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Regions</title>
+      <link>//localhost:1313/docs/quasarplane/regions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/quasarplane/regions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Quasarplane uses a region mapping based on the UN (United Nations) geoscheme.
+You can find the available regions and respective codes below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-west&lt;/td&gt;
+&lt;td&gt;North America Canada West coast. Provinces: (BC).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-central&lt;/td&gt;
+&lt;td&gt;North America Canada Central. Provinces: (QC, ON).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-prairie&lt;/td&gt;
+&lt;td&gt;North America Canada Prairie. Provinces: (AB, SK, MB).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-atlantic&lt;/td&gt;
+&lt;td&gt;North America Canada Atlantic. Provinces: (NL, PE, NS, NB).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-north&lt;/td&gt;
+&lt;td&gt;North America Canada North. Provinces: (NU, NT, YT).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-west&lt;/td&gt;
+&lt;td&gt;North America United States of America West. States: (CA, OR, WA, ID, MT, WY, UT, CO, NV, AK, HI).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-southwest&lt;/td&gt;
+&lt;td&gt;North America United States of America Southwest. States: (AZ, NM, TX, OK).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-midwest&lt;/td&gt;
+&lt;td&gt;North America United States of America Midwest. States: (ND, SD, NE, KS, MN, IA, MO, WI, IL, MI, IN, OH).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-southeast&lt;/td&gt;
+&lt;td&gt;North America United States of America Southeast. States: (AR, LA, MS, AL, TN, KY, WV, VA, NC, SC, GA, FL).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-northeast&lt;/td&gt;
+&lt;td&gt;North America United States of America Northeast. States: (PA, NY, VT, NH, ME, MA, RI, CT, NJ, DE, MD).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;central-america&lt;/td&gt;
+&lt;td&gt;Central America. Countries: (BZ, CR, SV, GT, HN, NI, PA).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;caribbean&lt;/td&gt;
+&lt;td&gt;Caribbean. Countries: (AI, AG, AW, BS, BB, BQ, VG, KY, CU, CW, DM, DO, GD, GP, HT, JM, MQ, MS, VE, PR, BQ, BL, KN, LC, MF, VC, SX, TT, TC, VI).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sa-north&lt;/td&gt;
+&lt;td&gt;South America North. Countries: (CO, VE, GY, SR, GF).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sa-west&lt;/td&gt;
+&lt;td&gt;South America West. Countries: (PE, EC, BO).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sa-south&lt;/td&gt;
+&lt;td&gt;South America South. Countries: (AR, UY, CL, PY).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sa-brazil&lt;/td&gt;
+&lt;td&gt;South America Brazil.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-central&lt;/td&gt;
+&lt;td&gt;Central Europe. Countries (SI, HU, SK, PL, CZ, AT, CH, DE).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-east&lt;/td&gt;
+&lt;td&gt;Eastern Europe. Countries (MD, UA, BY, LT, LV, EE, RU).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-north&lt;/td&gt;
+&lt;td&gt;Northern Europe. Countries (DK, SE, NO, FI, IS).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-southeast&lt;/td&gt;
+&lt;td&gt;South-eastern Europe. Countries (AL, MK, BG, RO, RS, XK, ME, BA, HR).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-south&lt;/td&gt;
+&lt;td&gt;Southern Europe. Countries (IT, GR).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-southwest&lt;/td&gt;
+&lt;td&gt;South-western Europe. Countries (PT, ES, AD).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-west&lt;/td&gt;
+&lt;td&gt;Western Europe. Countries (FR, LU, BE, NL, GB, IE).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-east&lt;/td&gt;
+&lt;td&gt;Eastern Africa. Countries (MZ, ZW, ZM, MW, TZ, BI, RW, KE, UG, SO, ET, DJ, ER, SS).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-middle&lt;/td&gt;
+&lt;td&gt;Middle Africa. Countries (TD, CF, CM, GQ, GA, CG, CD, AO).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-north&lt;/td&gt;
+&lt;td&gt;Northern Africa. Countries (EH, MA, DZ, TN, LY, EG, SD).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-south&lt;/td&gt;
+&lt;td&gt;Southern Africa. Countries (NA, BW, ZA, LS, SZ).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-west&lt;/td&gt;
+&lt;td&gt;Western Africa. Countries (MR, ML, NE, NG, BJ, TG, GH, BF, CI, LR, GN, SL, GW, GM, SN).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-central&lt;/td&gt;
+&lt;td&gt;Central Asia. Countries (KZ, KG, TJ, TM, UZ).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-east&lt;/td&gt;
+&lt;td&gt;Eastern Asia. Countries (CN, JP, KP, KR, MN, HK, MO, TW).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-southeast&lt;/td&gt;
+&lt;td&gt;South-eastern Asia. Countries (MM, LA, TH, VN, KH, MY, SG, ID, TL, PH).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-south&lt;/td&gt;
+&lt;td&gt;Southern Asia. Countries (IR, AF, PK, IN, BD, BT, NP, LK, MV).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-west&lt;/td&gt;
+&lt;td&gt;Western Asia. Countries (TR, GE, AM, AZ, SY, LB, JO, IL, IQ, KW, SA, YE, OM, AE, QA, BH, CY, PS).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-aus&lt;/td&gt;
+&lt;td&gt;Oceania Australia. Countries (AU).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-nz&lt;/td&gt;
+&lt;td&gt;Oceania New Zealand. Countries (NZ).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-mel&lt;/td&gt;
+&lt;td&gt;Oceania Melanesia. Countries (PG, NR, SB, VU, NC, FJ).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-mic&lt;/td&gt;
+&lt;td&gt;Oceania Micronesia. Countries (PW, MP, GU, FM, MH, KI).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-pol&lt;/td&gt;
+&lt;td&gt;Oceania Polynesia. Countries (TV, WF, TK, AS, TO, NU, CK, PF, PN).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,91 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quasarplane Documentation – User Guide for Container Service</title>
+    <link>//localhost:1313/docs/containers/user-guide/</link>
+    <description>Recent content in User Guide for Container Service on Quasarplane Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="//localhost:1313/docs/containers/user-guide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Set up to use Container Service</title>
+      <link>//localhost:1313/docs/containers/user-guide/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/containers/user-guide/setup/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;sign-up-for-a-quasarch-cloud-account&#34;&gt;Sign up for a Quasarch Cloud account&lt;/h2&gt;
+&lt;p&gt;If you do not have a Quasarch Cloud account, complete the following steps to create one.&lt;/p&gt;
+&lt;p&gt;To sign up for a Quasarch Cloud account&lt;/p&gt;
+&lt;p&gt;Visit &lt;a href=&#34;https://console.quasarch.cloud/register&#34;&gt;https://console.quasarch.cloud/register&lt;/a&gt;.
+Follow the online instructions.&lt;/p&gt;
+&lt;p&gt;Quasarch Cloud sends you a confirmation email after the sign-up process is complete.
+At any time, you can view your current account activity and manage your account by going to &lt;a href=&#34;https://console.quasarch.cloud&#34;&gt;https://console.quasarch.cloud&lt;/a&gt; and clicking on your profile picture.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Deploying on Container Service</title>
+      <link>//localhost:1313/docs/containers/user-guide/deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/containers/user-guide/deploy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page shows you how to deploy to Container Service a sample container that has already been pushed to a public registry (Docker Hub) in this case.&lt;/p&gt;
+&lt;h2 id=&#34;before-you-begin&#34;&gt;Before you Begin&lt;/h2&gt;
+&lt;p&gt;Make sure you are logged into &lt;a href=&#34;https://console.quasarch.cloud/&#34;&gt;console&lt;/a&gt; and that you have enough credits to continue.
+Be sure to delete all the resources you create after completing this guide so you avoid being charged.&lt;/p&gt;
+&lt;h2 id=&#34;creating-your-container&#34;&gt;Creating your Container&lt;/h2&gt;
+&lt;p&gt;To create a container deployment on Container Service, you&amp;rsquo;ll need to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;From the navigation menu select the &lt;strong&gt;Compute&lt;/strong&gt; dropdown and then click on &lt;strong&gt;Container Service&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Create&lt;/strong&gt; to go to the form to create your container.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;From here you&amp;rsquo;ll have to fill out the container creation form.
+Make sure that you specify a public registry path as &lt;strong&gt;private registries are not yet supported&lt;/strong&gt;.
+Don&amp;rsquo;t forget to include your image tag (when using the latest tag make sure to include &lt;code&gt;latest&lt;/code&gt; in the image).&lt;/p&gt;
+&lt;h3 id=&#34;gpu-settings&#34;&gt;GPU Settings&lt;/h3&gt;
+&lt;p&gt;Container Service supports running containers that leverage GPU support.
+In case you select many different GPU models, your deployment will only run with access to one of those models.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+
+    GPUs can greatly increase the cost of running your container depending on the model.
+
+&lt;/div&gt;
+
+&lt;p&gt;Once you are satisfied with the configuration click on &lt;strong&gt;Create&lt;/strong&gt;.
+This action will redirect you to the container listing page where you&amp;rsquo;ll find your deployment as &lt;em&gt;deploying&lt;/em&gt;.
+Quasarch Console is now waiting for Quasarplane to negotiate and send your container to one of our selected compute providers.
+Once the process is complete you&amp;rsquo;ll see the status of the container has changed to &lt;em&gt;deployed&lt;/em&gt;.
+If something went wrong the container will have its status as &lt;em&gt;failed&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+
+    Currently every container will have its port forwarded to port 80.
+Please make sure you set the &lt;code&gt;port&lt;/code&gt; field correctly to point towards the container&amp;rsquo;s exposed port.
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

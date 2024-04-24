@@ -1,0 +1,281 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quasarplane Documentation – Quasarplane Overview</title>
+    <link>//localhost:1313/docs/quasarplane/</link>
+    <description>Recent content in Quasarplane Overview on Quasarplane Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="//localhost:1313/docs/quasarplane/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Security in Quasarplane</title>
+      <link>//localhost:1313/docs/quasarplane/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/quasarplane/security/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Security is a shared responsibility between Quasarch, its providers and tenants.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Quasarch&lt;/strong&gt; - Quasarch&amp;rsquo;s responsibility is to securely distribute workloads across the different providers and taking measures in securing your data. Providers do not get information on who is hosting a particular container from Quasarch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Providers&lt;/strong&gt; - Providers are responsible for protecting the infrastructure that runs Quasarch services in the Quasarch Cloud. &lt;a href=&#34;//localhost:1313/&#34;&gt;Third-party auditors&lt;/a&gt; as well as Quasarch regularly test and verify the effectiveness of their security and compliance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tenants&lt;/strong&gt; - Tenant&amp;rsquo;s responsibility is determined by the services used. Tenants are also responsible for other factors including the sensitivity of their data, their project’s requirements and applicable laws and regulations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full system security is only achieved if these 3 entities ensure a secure and compliant collaboration and data handling between each other.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Payment &amp; Credit</title>
+      <link>//localhost:1313/docs/quasarplane/payment-and-credit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/quasarplane/payment-and-credit/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Quasarplane comes with a billing module that enable users to be charged by the resources they consume.
+Due to its decentralized nature and the use of blockchain technologies, the process of billing and distributing credit across users is rather complex.
+When users purchase credit, they want predictability of how many resources they can expect to consume with those credits.
+This proves a challenge when you are working with volatile assets that are usually associated with these decentralized protocols.&lt;/p&gt;
+&lt;p&gt;To help mitigate these risks, Quasarplane will only exchange assets when absolutely required as per the user&amp;rsquo;s actions.
+It will be responsible for storing, securing and transacting the assets.
+Quasarplane contains an algorithm that defines the risk strategy that allows itself to operate efficiently and securely.
+User&amp;rsquo;s will not have any direct holding or management of any assets related to the direct interaction with integrated protocols.
+&lt;strong&gt;They do hold their credits and manage them as they see fit&lt;/strong&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Providers</title>
+      <link>//localhost:1313/docs/quasarplane/providers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/quasarplane/providers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In a Quasarplane environment, Resource Providers, or simply Providers, are entities that contribute computing resources such as processing power (compute), storage, and network bandwidth to the network.
+These resources are collectively utilized to perform various tasks, store data, and run applications.
+Resource providers can be devices (such as computers or servers) connected to the network from individuals or organizations.&lt;/p&gt;
+&lt;p&gt;Quasarplane operates on the principle of distributed computing, where resources are sourced from multiple nodes (computers or servers) spread across the network.
+Unlike traditional centralized cloud services, where resources are provided by a single or a few data centers owned by a specific company, Quasarplane distributes the workload across a vast network of independent participants.&lt;/p&gt;
+&lt;p&gt;Resource providers in Quasarplane play a crucial role in ensuring the availability, reliability, and scalability of the platform.
+Users looking to host applications, store data, or execute tasks can leverage the resources provided by these entities.&lt;/p&gt;
+&lt;h2 id=&#34;tiers&#34;&gt;Tiers&lt;/h2&gt;
+&lt;p&gt;Providers that are onboarded into Quasarplane belong to one of two tiers.
+Each tier is a direct measure of the quality of the services a Provider offers.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Tier 1&lt;/strong&gt; - These providers are audited by external auditors and Quasarch has made due diligence on it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tier 2&lt;/strong&gt; - Providers that have completed the Tier 1 and are direct partners of Quasarch.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tiers serve as incentives for Providers to better their services and begin a partnership relation with Quasarch.
+The more high tier Providers in the platform, the better service Quasarplane can provide which creates a collaborative integration between both entities.&lt;/p&gt;
+&lt;h2 id=&#34;types-of-providers&#34;&gt;Types of Providers&lt;/h2&gt;
+&lt;p&gt;Quasarplane, and by extension the Quasarch Cloud Platform as a whole, support several types of Resource Providers.
+They form the infrastructure layer that will support the cloud services offered by the platform.&lt;/p&gt;
+&lt;h3 id=&#34;compute-providers&#34;&gt;Compute Providers&lt;/h3&gt;
+&lt;p&gt;Compute Providers in Quasarplane are entities that offer computational resources, such as processing power, memory and storage to the platform.
+These resources are used to perform a wide range of tasks, including running applications and processing data.
+Compute providers are a fundamental component of Quasarplane and contribute to the overall computing power and capacity of the platform.&lt;/p&gt;
+&lt;p&gt;Here are a few key points about Compute Providers in Quasarplane:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Decentralized Nature&lt;/strong&gt; - Compute Providers in a Decentralized Cloud Platform such as Quasarplane operate on a peer-to-peer network, where resources are sourced from individual computers or servers connected to the network. This ensures that the computing power is distributed across several entities rather than being concentrated in a few centralized data centers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Sharing&lt;/strong&gt; - Compute Providers share their computational resources, such as CPU cycles, RAM and GPUs, with the network. These resources will be utilized by developers, businesses, or other users to run applications and perform various computing tasks through Quasarplane&amp;rsquo;s Cloud Services.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Incentives&lt;/strong&gt; - Compute Providers are typically incentivized for their contributions to the network. These incentives encourage more individuals and organizations to participate, leading to a larger and more powerful Quasarplane.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security and Trust&lt;/strong&gt; - Quasarplane employs encryption and cryptographic techniques to ensure the security and privacy of computations and data processing performed by Compute Providers. This is essential to maintain the integrity of applications and trust in the platform.
+In summary, Compute Providers in Quasarplane contribute their computational resources to the network, enabling a distributed, secure, and efficient computing infrastructure for various Quasarplane cloud services.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Regions</title>
+      <link>//localhost:1313/docs/quasarplane/regions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/quasarplane/regions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Quasarplane uses a region mapping based on the UN (United Nations) geoscheme.
+You can find the available regions and respective codes below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-west&lt;/td&gt;
+&lt;td&gt;North America Canada West coast. Provinces: (BC).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-central&lt;/td&gt;
+&lt;td&gt;North America Canada Central. Provinces: (QC, ON).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-prairie&lt;/td&gt;
+&lt;td&gt;North America Canada Prairie. Provinces: (AB, SK, MB).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-atlantic&lt;/td&gt;
+&lt;td&gt;North America Canada Atlantic. Provinces: (NL, PE, NS, NB).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-ca-north&lt;/td&gt;
+&lt;td&gt;North America Canada North. Provinces: (NU, NT, YT).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-west&lt;/td&gt;
+&lt;td&gt;North America United States of America West. States: (CA, OR, WA, ID, MT, WY, UT, CO, NV, AK, HI).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-southwest&lt;/td&gt;
+&lt;td&gt;North America United States of America Southwest. States: (AZ, NM, TX, OK).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-midwest&lt;/td&gt;
+&lt;td&gt;North America United States of America Midwest. States: (ND, SD, NE, KS, MN, IA, MO, WI, IL, MI, IN, OH).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-southeast&lt;/td&gt;
+&lt;td&gt;North America United States of America Southeast. States: (AR, LA, MS, AL, TN, KY, WV, VA, NC, SC, GA, FL).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;na-us-northeast&lt;/td&gt;
+&lt;td&gt;North America United States of America Northeast. States: (PA, NY, VT, NH, ME, MA, RI, CT, NJ, DE, MD).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;central-america&lt;/td&gt;
+&lt;td&gt;Central America. Countries: (BZ, CR, SV, GT, HN, NI, PA).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;caribbean&lt;/td&gt;
+&lt;td&gt;Caribbean. Countries: (AI, AG, AW, BS, BB, BQ, VG, KY, CU, CW, DM, DO, GD, GP, HT, JM, MQ, MS, VE, PR, BQ, BL, KN, LC, MF, VC, SX, TT, TC, VI).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sa-north&lt;/td&gt;
+&lt;td&gt;South America North. Countries: (CO, VE, GY, SR, GF).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sa-west&lt;/td&gt;
+&lt;td&gt;South America West. Countries: (PE, EC, BO).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sa-south&lt;/td&gt;
+&lt;td&gt;South America South. Countries: (AR, UY, CL, PY).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sa-brazil&lt;/td&gt;
+&lt;td&gt;South America Brazil.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-central&lt;/td&gt;
+&lt;td&gt;Central Europe. Countries (SI, HU, SK, PL, CZ, AT, CH, DE).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-east&lt;/td&gt;
+&lt;td&gt;Eastern Europe. Countries (MD, UA, BY, LT, LV, EE, RU).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-north&lt;/td&gt;
+&lt;td&gt;Northern Europe. Countries (DK, SE, NO, FI, IS).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-southeast&lt;/td&gt;
+&lt;td&gt;South-eastern Europe. Countries (AL, MK, BG, RO, RS, XK, ME, BA, HR).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-south&lt;/td&gt;
+&lt;td&gt;Southern Europe. Countries (IT, GR).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-southwest&lt;/td&gt;
+&lt;td&gt;South-western Europe. Countries (PT, ES, AD).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eu-west&lt;/td&gt;
+&lt;td&gt;Western Europe. Countries (FR, LU, BE, NL, GB, IE).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-east&lt;/td&gt;
+&lt;td&gt;Eastern Africa. Countries (MZ, ZW, ZM, MW, TZ, BI, RW, KE, UG, SO, ET, DJ, ER, SS).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-middle&lt;/td&gt;
+&lt;td&gt;Middle Africa. Countries (TD, CF, CM, GQ, GA, CG, CD, AO).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-north&lt;/td&gt;
+&lt;td&gt;Northern Africa. Countries (EH, MA, DZ, TN, LY, EG, SD).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-south&lt;/td&gt;
+&lt;td&gt;Southern Africa. Countries (NA, BW, ZA, LS, SZ).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;af-west&lt;/td&gt;
+&lt;td&gt;Western Africa. Countries (MR, ML, NE, NG, BJ, TG, GH, BF, CI, LR, GN, SL, GW, GM, SN).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-central&lt;/td&gt;
+&lt;td&gt;Central Asia. Countries (KZ, KG, TJ, TM, UZ).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-east&lt;/td&gt;
+&lt;td&gt;Eastern Asia. Countries (CN, JP, KP, KR, MN, HK, MO, TW).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-southeast&lt;/td&gt;
+&lt;td&gt;South-eastern Asia. Countries (MM, LA, TH, VN, KH, MY, SG, ID, TL, PH).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-south&lt;/td&gt;
+&lt;td&gt;Southern Asia. Countries (IR, AF, PK, IN, BD, BT, NP, LK, MV).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;as-west&lt;/td&gt;
+&lt;td&gt;Western Asia. Countries (TR, GE, AM, AZ, SY, LB, JO, IL, IQ, KW, SA, YE, OM, AE, QA, BH, CY, PS).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-aus&lt;/td&gt;
+&lt;td&gt;Oceania Australia. Countries (AU).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-nz&lt;/td&gt;
+&lt;td&gt;Oceania New Zealand. Countries (NZ).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-mel&lt;/td&gt;
+&lt;td&gt;Oceania Melanesia. Countries (PG, NR, SB, VU, NC, FJ).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-mic&lt;/td&gt;
+&lt;td&gt;Oceania Micronesia. Countries (PW, MP, GU, FM, MH, KI).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oc-pol&lt;/td&gt;
+&lt;td&gt;Oceania Polynesia. Countries (TV, WF, TK, AS, TO, NU, CK, PF, PN).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

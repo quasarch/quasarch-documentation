@@ -11,3 +11,9 @@ $info: #5BC0DE;
 $success: #22BB33;
 $warning: #F0AD4E;
 $danger: #BB2124;
+$dark: #FFFFFF;
+
+// @include color-mode(dark) {
+//   // CSS variable overrides here...
+//   $primary: #2D345B;
+// }

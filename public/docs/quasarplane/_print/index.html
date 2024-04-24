@@ -1,0 +1,633 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="//localhost:1313/docs/quasarplane/">
+<link rel="alternate" type="application/rss&#43;xml" href="//localhost:1313/docs/quasarplane/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Quasarplane Overview | Quasarplane Documentation</title>
+<meta name="description" content="Overview of the Quasarplane control-plane system.">
+<meta property="og:url" content="//localhost:1313/docs/quasarplane/">
+  <meta property="og:site_name" content="Quasarplane Documentation">
+  <meta property="og:title" content="Quasarplane Overview">
+  <meta property="og:description" content="Overview of the Quasarplane control-plane system.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Quasarplane Overview">
+  <meta itemprop="description" content="Overview of the Quasarplane control-plane system.">
+  <meta itemprop="dateModified" content="2024-04-23T21:05:28+01:00">
+  <meta itemprop="wordCount" content="169"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Quasarplane Overview">
+<meta name="twitter:description" content="Overview of the Quasarplane control-plane system.">
+
+
+
+
+
+<link href="/scss/main.css" rel="stylesheet">
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/prism.css"/>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"><svg height="200" width="1080" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 200"><defs><style>.cls-1{fill:none}.cls-2{fill:#fff}.cls-3{clip-path:url(#clip-path)}.cls-4{clip-path:url(#clip-path-2)}</style><clipPath id="clip-path"><polygon class="cls-1" points="600.18 64.44 569.07 151.33 554.72 151.33 592.4 47.69 608.11 47.69 645.65 151.33 631.29 151.33 600.18 64.44"/></clipPath><clipPath id="clip-path-2"><polygon class="cls-1" points="380.89 64.68 349.78 151.57 335.43 151.57 373.11 47.93 388.82 47.93 426.36 151.57 412 151.57 380.89 64.68"/></clipPath></defs><path class="cls-2" d="M239.57 47.09v66q0 13.9 6.8 20.64t18.92 6.73q12 0 18.77-6.73t6.81-20.64v-66h13.61V112.9q0 13-5.24 21.91A32.86 32.86.0 01285.11 148a48.09 48.09.0 01-39.93.0 32.42 32.42.0 01-14.06-13.23Q226 125.92 226 112.9V47.09z"/><path class="cls-2" d="M472.51 148.72a30.86 30.86.0 01-12.79-10.17 26 26 0 01-4.79-15h14.51a19.12 19.12.0 006.05 12.33q5.31 5 15.48 5 9.72.0 15.34-4.86a15.77 15.77.0 005.6-12.48 14.18 14.18.0 00-3.29-9.72 21 21 0 00-8.22-5.69 131.34 131.34.0 00-13.31-4.19 117.45 117.45.0 01-16.53-5.38 26.54 26.54.0 01-10.62-8.45q-4.41-5.76-4.41-15.48a26.73 26.73.0 014.34-15.1 28.21 28.21.0 0112.18-10.17 42.86 42.86.0 0118-3.59q14.66.0 24 7.32a27.11 27.11.0 0110.55 19.45h-15q-.75-6-6.28-10.55t-14.66-4.56q-8.52.0-13.91 4.41t-5.38 12.34a13.37 13.37.0 003.21 9.27 20.65 20.65.0 007.93 5.46q4.71 1.88 13.24 4.27a124.56 124.56.0 0116.6 5.6 27.72 27.72.0 0110.77 8.53q4.48 5.76 4.48 15.63a27.4 27.4.0 01-4 14.36 29.7 29.7.0 01-12 10.91 39.42 39.42.0 01-18.7 4.19A44.57 44.57.0 01472.51 148.72z"/><path class="cls-2" d="M731.31 151.33l-24.82-42.62H690v42.62h-13.6V47.09h33.65q11.8.0 20 4a28 28 0 0112.19 10.92 30.46 30.46.0 014 15.7 30.69 30.69.0 01-6.21 19q-6.21 8.22-18.62 10.91l26.18 43.67zM690 97.79h20.05q11.05.0 16.6-5.46t5.53-14.58q0-9.27-5.46-14.36t-16.67-5.08H690z"/><path class="cls-2" d="M784.1 71.69a50 50 0 0118.77-19.06 51.74 51.74.0 0126.4-6.88q17.06.0 29.76 8.22A47.15 47.15.0 01877.58 77.3h-16.3a32.8 32.8.0 00-12.49-14.5q-8.16-5.09-19.52-5.09a38 38 0 00-19.59 5.09 35.58 35.58.0 00-13.61 14.43q-4.94 9.34-4.94 21.91a45.93 45.93.0 004.94 21.76 35.58 35.58.0 0013.61 14.43 38 38 0 0019.59 5.09q11.37.0 19.52-5A32.32 32.32.0 00861.28 121h16.3A46.73 46.73.0 01859 144.08q-12.71 8.16-29.76 8.15a52.18 52.18.0 01-26.4-6.8 49.72 49.72.0 01-18.77-18.92 54.51 54.51.0 01-6.87-27.37A55 55 0 01784.1 71.69z"/><path class="cls-2" d="M993 47.09V151.33h-13.6V104.07h-53.1v47.26H912.72V47.09h13.61V92.86h53.1V47.09z"/><g class="cls-3"><path class="cls-2" d="M622.92 128.15H577.45l-8.38 23.18H554.72L592.41 47.69h15.7l37.54 103.64H631.29zM619 117.09 600.18 64.44l-16.53 46.2-2.31 6.45z"/></g><circle class="cls-2" cx="599.81" cy="122.26" r="5.5"/><g class="cls-4"><path class="cls-2" d="M403.62 128.39H358.16l-8.38 23.18H335.43L373.11 47.93h15.71l37.54 103.64H412zm-3.88-11.07-18.85-52.64-16.53 46.2-2.31 6.44z"/></g><circle class="cls-2" cx="380.52" cy="122.5" r="5.5"/><path class="cls-2" d="M170.15 128.87a42.2 42.2.0 01-4.29 3.62l8 8.37a55.7 55.7.0 004.22-3.69c1.37-1.32 2.66-2.68 3.85-4.08l-8-8.37A43 43 0 01170.15 128.87zM155.5 49.73a48.28 48.28.0 00-26-.55A53.77 53.77.0 0092.19 85.06a48.55 48.55.0 00-.46 26.12 53.16 53.16.0 0013.67 24 53.09 53.09.0 0023.42 14.58 48.62 48.62.0 0026.12.55 49.7 49.7.0 0014.34-6.16L161 135.53a35.8 35.8.0 01-8.11 3.06 34.91 34.91.0 01-19.46-.89 44.58 44.58.0 01-18.28-11.95q-8.49-8.82-11.28-18.78a35.1 35.1.0 01-.14-19.38 39.8 39.8.0 0127.73-26.67 35.1 35.1.0 0119.36.89q9.84 3.18 18.32 12a44.78 44.78.0 0111.24 18.72 34.93 34.93.0 01.13 19.49 36.31 36.31.0 01-3.36 8l8.28 8.6a49.88 49.88.0 006.79-14.19 48.23 48.23.0 00.45-26 53.45 53.45.0 00-13.76-24A53.47 53.47.0 00155.5 49.73z"/><rect class="cls-2" x="166.43" y="93.33" width="11.2" height="75" transform="translate(-42.65 155.83) rotate(-43.89)"/><rect class="cls-2" x="96.78" y="37.56" width="11.2" height="32.82" transform="translate(-8.82 86.06) rotate(-43.89)"/></svg></span><span class="navbar-brand__name">Quasarplane Documentation</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs/"><span>Documentation</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://discord.quasarch.network/" target="_blank" rel="noopener"><i class='fa-brands fa-discord'></i><span>Discord</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/quasarch" target="_blank" rel="noopener"><i class='fa-brands fa-github'></i><span>GitHub</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/quasarch_cloud" target="_blank" rel="noopener"><i class='fa-brands fa-twitter'></i><span>Twitter</span></a>
+      </li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/quasarplane/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Quasarplane Overview</h1>
+<div class="lead">Overview of the Quasarplane control-plane system.</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-04b4cd9a31c1d588cc7e3293063e682e">Security in Quasarplane</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1.1: <a href="#pg-60b9183437e05188a5566837a0da25c7">Privacy</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-b924b022ab0396b6f0b5dd8a92068994">Payment &amp; Credit</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-a0cc486b22d91559aa843e9d39e5f0ce">Providers</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-e44db0bb82f425321ff38260c13f8d90">Regions</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <p>Quasarplane is a control plane for decentralized cloud services and DePINs.
+It serves as layer to manage and guarantee enterprise-grade properties to decentralized systems.</p>
+<p>Quasarplane is the backbone of <a href="/">Quasarch Console</a> and what makes Quasarch Cloud Platform run, providing most of the functionality available on it.
+It is important to understand how both of these components work together to make the most out of the platform or build your own integrations with Quasarch Cloud Platform.</p>
+<p>The following documentation will provide you with everything you need to understand how the platform works and how you can build your own solutions on top of it.
+This documentation will not guide you through the usage of the Console, for that visit the <a href="/docs/containers/">Console documentation</a></p>
+<h2 id="integrating">Integrating</h2>
+<p>Quasarplane was designed with integration as an architectural characteristic since the beginning.
+Integration can be done either through our managed service or a self-hosted solution.
+<strong>For a self-hosted solution integration contact the team.</strong></p>
+<p>The API can be accessed through REST. For more information read the <a href="api-reference">API reference</a>.</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-04b4cd9a31c1d588cc7e3293063e682e">1 - Security in Quasarplane</h1>
+    <div class="lead">How is your data&rsquo;s security handled by Quasarplane.</div>
+	<p>Security is a shared responsibility between Quasarch, its providers and tenants.</p>
+<ul>
+<li><strong>Quasarch</strong> - Quasarch&rsquo;s responsibility is to securely distribute workloads across the different providers and taking measures in securing your data. Providers do not get information on who is hosting a particular container from Quasarch.</li>
+<li><strong>Providers</strong> - Providers are responsible for protecting the infrastructure that runs Quasarch services in the Quasarch Cloud. <a href="/">Third-party auditors</a> as well as Quasarch regularly test and verify the effectiveness of their security and compliance.</li>
+<li><strong>Tenants</strong> - Tenant&rsquo;s responsibility is determined by the services used. Tenants are also responsible for other factors including the sensitivity of their data, their project’s requirements and applicable laws and regulations.</li>
+</ul>
+<p>Full system security is only achieved if these 3 entities ensure a secure and compliant collaboration and data handling between each other.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-60b9183437e05188a5566837a0da25c7">1.1 - Privacy</h1>
+    <div class="lead">Data privacy on Quasarch Cloud Platform</div>
+	<p>As a solution that enables Tenants with self-sovereignty over their data, Tenants can choose where they want to run their workloads and store their data.
+Quasarch Cloud Platform can serve as a privacy layer between Tenants and <a href="/docs/quasarplane/providers/">Providers</a>.
+Providers do not have access to the Quasarch Cloud Platform account that is accessing resources.</p>
+<h2 id="compute-providers-data-access">Compute Providers Data Access</h2>
+<p>Compute Providers will run Tenant workloads on their infrastructure and by deploying Tenants are trusting them with their data.
+They are required to manage workloads in a secure and responsible way and provide transparency to their Tenants.</p>
+<p>Compute Providers might have access to the following data:</p>
+<ul>
+<li>Environment variables</li>
+<li>Unencrypted files</li>
+<li>Unencrypted network traffic</li>
+</ul>
+<p>It is recommended that you design your applications with an emphasis on security whether you are trusting a centralized Cloud Provider or a decentralized Cloud Provider.
+At any time Tenants can query Provider data to help them make informed choices based on their specific requirements for security.
+For more information on what attributes you can have query check the <a href="../api-reference">Providers API Reference</a></p>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-b924b022ab0396b6f0b5dd8a92068994">2 - Payment &amp; Credit</h1>
+    <div class="lead">How does Quasarplane handle resource payments and user credits..</div>
+	<p>Quasarplane comes with a billing module that enable users to be charged by the resources they consume.
+Due to its decentralized nature and the use of blockchain technologies, the process of billing and distributing credit across users is rather complex.
+When users purchase credit, they want predictability of how many resources they can expect to consume with those credits.
+This proves a challenge when you are working with volatile assets that are usually associated with these decentralized protocols.</p>
+<p>To help mitigate these risks, Quasarplane will only exchange assets when absolutely required as per the user&rsquo;s actions.
+It will be responsible for storing, securing and transacting the assets.
+Quasarplane contains an algorithm that defines the risk strategy that allows itself to operate efficiently and securely.
+User&rsquo;s will not have any direct holding or management of any assets related to the direct interaction with integrated protocols.
+<strong>They do hold their credits and manage them as they see fit</strong></p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a0cc486b22d91559aa843e9d39e5f0ce">3 - Providers</h1>
+    <div class="lead">What are Resource Providers in Quasarplane?</div>
+	<p>In a Quasarplane environment, Resource Providers, or simply Providers, are entities that contribute computing resources such as processing power (compute), storage, and network bandwidth to the network.
+These resources are collectively utilized to perform various tasks, store data, and run applications.
+Resource providers can be devices (such as computers or servers) connected to the network from individuals or organizations.</p>
+<p>Quasarplane operates on the principle of distributed computing, where resources are sourced from multiple nodes (computers or servers) spread across the network.
+Unlike traditional centralized cloud services, where resources are provided by a single or a few data centers owned by a specific company, Quasarplane distributes the workload across a vast network of independent participants.</p>
+<p>Resource providers in Quasarplane play a crucial role in ensuring the availability, reliability, and scalability of the platform.
+Users looking to host applications, store data, or execute tasks can leverage the resources provided by these entities.</p>
+<h2 id="tiers">Tiers</h2>
+<p>Providers that are onboarded into Quasarplane belong to one of two tiers.
+Each tier is a direct measure of the quality of the services a Provider offers.</p>
+<ol>
+<li><strong>Tier 1</strong> - These providers are audited by external auditors and Quasarch has made due diligence on it.</li>
+<li><strong>Tier 2</strong> - Providers that have completed the Tier 1 and are direct partners of Quasarch.</li>
+</ol>
+<p>Tiers serve as incentives for Providers to better their services and begin a partnership relation with Quasarch.
+The more high tier Providers in the platform, the better service Quasarplane can provide which creates a collaborative integration between both entities.</p>
+<h2 id="types-of-providers">Types of Providers</h2>
+<p>Quasarplane, and by extension the Quasarch Cloud Platform as a whole, support several types of Resource Providers.
+They form the infrastructure layer that will support the cloud services offered by the platform.</p>
+<h3 id="compute-providers">Compute Providers</h3>
+<p>Compute Providers in Quasarplane are entities that offer computational resources, such as processing power, memory and storage to the platform.
+These resources are used to perform a wide range of tasks, including running applications and processing data.
+Compute providers are a fundamental component of Quasarplane and contribute to the overall computing power and capacity of the platform.</p>
+<p>Here are a few key points about Compute Providers in Quasarplane:</p>
+<ul>
+<li><strong>Decentralized Nature</strong> - Compute Providers in a Decentralized Cloud Platform such as Quasarplane operate on a peer-to-peer network, where resources are sourced from individual computers or servers connected to the network. This ensures that the computing power is distributed across several entities rather than being concentrated in a few centralized data centers.</li>
+<li><strong>Resource Sharing</strong> - Compute Providers share their computational resources, such as CPU cycles, RAM and GPUs, with the network. These resources will be utilized by developers, businesses, or other users to run applications and perform various computing tasks through Quasarplane&rsquo;s Cloud Services.</li>
+<li><strong>Incentives</strong> - Compute Providers are typically incentivized for their contributions to the network. These incentives encourage more individuals and organizations to participate, leading to a larger and more powerful Quasarplane.</li>
+<li><strong>Security and Trust</strong> - Quasarplane employs encryption and cryptographic techniques to ensure the security and privacy of computations and data processing performed by Compute Providers. This is essential to maintain the integrity of applications and trust in the platform.
+In summary, Compute Providers in Quasarplane contribute their computational resources to the network, enabling a distributed, secure, and efficient computing infrastructure for various Quasarplane cloud services.</li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-e44db0bb82f425321ff38260c13f8d90">4 - Regions</h1>
+    <div class="lead">Quasarplane regions based on United Nations Geoscheme</div>
+	<p>Quasarplane uses a region mapping based on the UN (United Nations) geoscheme.
+You can find the available regions and respective codes below.</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>na-ca-west</td>
+<td>North America Canada West coast. Provinces: (BC).</td>
+</tr>
+<tr>
+<td>na-ca-central</td>
+<td>North America Canada Central. Provinces: (QC, ON).</td>
+</tr>
+<tr>
+<td>na-ca-prairie</td>
+<td>North America Canada Prairie. Provinces: (AB, SK, MB).</td>
+</tr>
+<tr>
+<td>na-ca-atlantic</td>
+<td>North America Canada Atlantic. Provinces: (NL, PE, NS, NB).</td>
+</tr>
+<tr>
+<td>na-ca-north</td>
+<td>North America Canada North. Provinces: (NU, NT, YT).</td>
+</tr>
+<tr>
+<td>na-us-west</td>
+<td>North America United States of America West. States: (CA, OR, WA, ID, MT, WY, UT, CO, NV, AK, HI).</td>
+</tr>
+<tr>
+<td>na-us-southwest</td>
+<td>North America United States of America Southwest. States: (AZ, NM, TX, OK).</td>
+</tr>
+<tr>
+<td>na-us-midwest</td>
+<td>North America United States of America Midwest. States: (ND, SD, NE, KS, MN, IA, MO, WI, IL, MI, IN, OH).</td>
+</tr>
+<tr>
+<td>na-us-southeast</td>
+<td>North America United States of America Southeast. States: (AR, LA, MS, AL, TN, KY, WV, VA, NC, SC, GA, FL).</td>
+</tr>
+<tr>
+<td>na-us-northeast</td>
+<td>North America United States of America Northeast. States: (PA, NY, VT, NH, ME, MA, RI, CT, NJ, DE, MD).</td>
+</tr>
+<tr>
+<td>central-america</td>
+<td>Central America. Countries: (BZ, CR, SV, GT, HN, NI, PA).</td>
+</tr>
+<tr>
+<td>caribbean</td>
+<td>Caribbean. Countries: (AI, AG, AW, BS, BB, BQ, VG, KY, CU, CW, DM, DO, GD, GP, HT, JM, MQ, MS, VE, PR, BQ, BL, KN, LC, MF, VC, SX, TT, TC, VI).</td>
+</tr>
+<tr>
+<td>sa-north</td>
+<td>South America North. Countries: (CO, VE, GY, SR, GF).</td>
+</tr>
+<tr>
+<td>sa-west</td>
+<td>South America West. Countries: (PE, EC, BO).</td>
+</tr>
+<tr>
+<td>sa-south</td>
+<td>South America South. Countries: (AR, UY, CL, PY).</td>
+</tr>
+<tr>
+<td>sa-brazil</td>
+<td>South America Brazil.</td>
+</tr>
+<tr>
+<td>eu-central</td>
+<td>Central Europe. Countries (SI, HU, SK, PL, CZ, AT, CH, DE).</td>
+</tr>
+<tr>
+<td>eu-east</td>
+<td>Eastern Europe. Countries (MD, UA, BY, LT, LV, EE, RU).</td>
+</tr>
+<tr>
+<td>eu-north</td>
+<td>Northern Europe. Countries (DK, SE, NO, FI, IS).</td>
+</tr>
+<tr>
+<td>eu-southeast</td>
+<td>South-eastern Europe. Countries (AL, MK, BG, RO, RS, XK, ME, BA, HR).</td>
+</tr>
+<tr>
+<td>eu-south</td>
+<td>Southern Europe. Countries (IT, GR).</td>
+</tr>
+<tr>
+<td>eu-southwest</td>
+<td>South-western Europe. Countries (PT, ES, AD).</td>
+</tr>
+<tr>
+<td>eu-west</td>
+<td>Western Europe. Countries (FR, LU, BE, NL, GB, IE).</td>
+</tr>
+<tr>
+<td>af-east</td>
+<td>Eastern Africa. Countries (MZ, ZW, ZM, MW, TZ, BI, RW, KE, UG, SO, ET, DJ, ER, SS).</td>
+</tr>
+<tr>
+<td>af-middle</td>
+<td>Middle Africa. Countries (TD, CF, CM, GQ, GA, CG, CD, AO).</td>
+</tr>
+<tr>
+<td>af-north</td>
+<td>Northern Africa. Countries (EH, MA, DZ, TN, LY, EG, SD).</td>
+</tr>
+<tr>
+<td>af-south</td>
+<td>Southern Africa. Countries (NA, BW, ZA, LS, SZ).</td>
+</tr>
+<tr>
+<td>af-west</td>
+<td>Western Africa. Countries (MR, ML, NE, NG, BJ, TG, GH, BF, CI, LR, GN, SL, GW, GM, SN).</td>
+</tr>
+<tr>
+<td>as-central</td>
+<td>Central Asia. Countries (KZ, KG, TJ, TM, UZ).</td>
+</tr>
+<tr>
+<td>as-east</td>
+<td>Eastern Asia. Countries (CN, JP, KP, KR, MN, HK, MO, TW).</td>
+</tr>
+<tr>
+<td>as-southeast</td>
+<td>South-eastern Asia. Countries (MM, LA, TH, VN, KH, MY, SG, ID, TL, PH).</td>
+</tr>
+<tr>
+<td>as-south</td>
+<td>Southern Asia. Countries (IR, AF, PK, IN, BD, BT, NP, LK, MV).</td>
+</tr>
+<tr>
+<td>as-west</td>
+<td>Western Asia. Countries (TR, GE, AM, AZ, SY, LB, JO, IL, IQ, KW, SA, YE, OM, AE, QA, BH, CY, PS).</td>
+</tr>
+<tr>
+<td>oc-aus</td>
+<td>Oceania Australia. Countries (AU).</td>
+</tr>
+<tr>
+<td>oc-nz</td>
+<td>Oceania New Zealand. Countries (NZ).</td>
+</tr>
+<tr>
+<td>oc-mel</td>
+<td>Oceania Melanesia. Countries (PG, NR, SB, VU, NC, FJ).</td>
+</tr>
+<tr>
+<td>oc-mic</td>
+<td>Oceania Micronesia. Countries (PW, MP, GU, FM, MH, KI).</td>
+</tr>
+<tr>
+<td>oc-pol</td>
+<td>Oceania Polynesia. Countries (TV, WF, TK, AS, TO, NU, CK, PF, PN).</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Twitter" aria-label="Twitter">
+    <a target="_blank" rel="noopener" href="https://twitter.com/quasarch_cloud" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/quasarch" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Discord" aria-label="Discord">
+    <a target="_blank" rel="noopener" href="https://discord.quasarch.cloud/" aria-label="Discord">
+      <i class="fab fa-discord"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">Quasarch</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://quasarch.cloud/privacy/" target="_blank" rel="noopener">Privacy Policy</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script src='/js/prism.js'></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>
