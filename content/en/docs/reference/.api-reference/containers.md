@@ -346,7 +346,7 @@ Status codes:
 - **403** - Forbidden
 - **404** - Not Found
 - **500** - Internal Server Error
-- 
+-
 ## Get Container Logs
 
 `GET /v1/containers/:id/logs`

@@ -34,12 +34,10 @@ GPUs can greatly increase the cost of running your container depending on the mo
 Once you are satisfied with the configuration click on **Create**.
 This action will redirect you to the container listing page where you'll find your deployment as *deploying*.
 Quasarch Console is now waiting for Quasarplane to negotiate and send your container to one of our selected compute providers.
-Once the process is complete you'll see the status of the container has changed to *deployed*. 
+Once the process is complete you'll see the status of the container has changed to *deployed*.
 If something went wrong the container will have its status as *failed*.
 
 {{% alert title="Warning" color="warning" %}}
 Currently every container will have its port forwarded to port 80.
 Please make sure you set the `port` field correctly to point towards the container's exposed port.
 {{% /alert %}}
-
-

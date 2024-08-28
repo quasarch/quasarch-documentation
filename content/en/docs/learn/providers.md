@@ -20,7 +20,7 @@ Providers that are onboarded into Quasarplane belong to one of two tiers.
 Each tier is a direct measure of the quality of the services a Provider offers.
 
 1. **Tier 1** - These providers are audited by external auditors and Quasarch has made due diligence on it.
-2. **Tier 2** - Providers that have completed the Tier 1 and are direct partners of Quasarch. 
+2. **Tier 2** - Providers that have completed the Tier 1 and are direct partners of Quasarch.
 
 Tiers serve as incentives for Providers to better their services and begin a partnership relation with Quasarch.
 The more high tier Providers in the platform, the better service Quasarplane can provide which creates a collaborative integration between both entities.

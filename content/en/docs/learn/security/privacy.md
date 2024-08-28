@@ -21,4 +21,3 @@ Compute Providers might have access to the following data:
 It is recommended that you design your applications with an emphasis on security whether you are trusting a centralized Cloud Provider or a decentralized Cloud Provider.
 At any time Tenants can query Provider data to help them make informed choices based on their specific requirements for security.
 For more information on what attributes you can have query check the [Providers API Reference](../api-reference)
-
