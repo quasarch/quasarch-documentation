@@ -1,8 +1,13 @@
 REGISTRY:=ghcr.io/quasarch
 
-release:
+build:
 	docker build -t $(REGISTRY)/quasarch-docs:latest .
+
+release: build
 	docker push $(REGISTRY)/quasarch-docs:latest
+
+release-amd64:
+	DOCKER_DEFAULT_PLATFORM=linux/amd64 $(MAKE) release
 
 apply:
 	kubectl apply -f deploy/k8s.yaml
@@ -16,5 +21,5 @@ delete:
 	kubectl delete -f deploy/k8s.yaml
 	kubectl delete secret regcred -n docs
 
-run:
+run: build
 	docker run -p 1313:1313 $(REGISTRY)/quasarch-docs:latest

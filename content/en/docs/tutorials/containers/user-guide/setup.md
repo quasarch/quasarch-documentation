@@ -3,6 +3,8 @@ title: "Set up to use Container Service"
 linkTitle: "Setup"
 weight: 1
 description: Set up guide to start using the Container Service on Quasarch Cloud.
+categories:
+  - Container Service
 ---
 
 ## Sign up for a Quasarch Cloud account

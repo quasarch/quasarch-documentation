@@ -9,22 +9,23 @@ metadata:
     name: docs
     namespace: docs
 spec:
-    selector:
-        matchLabels:
-            app: docs
-    template:
-        metadata:
-            labels:
-                app: docs
-        spec:
-            containers:
-                - name: docs
-                  image: ghcr.io/quasarch/quasarch-docs:latest
-                  ports:
-                      - name: docs
-                        containerPort: 1313
-            imagePullSecrets:
-                - name: regcred
+  selector:
+    matchLabels:
+      app: docs
+  template:
+    metadata:
+      labels:
+        app: docs
+    spec:
+      containers:
+        - name: docs
+          image: ghcr.io/quasarch/quasarch-docs:latest
+          ports:
+            - name: docs
+              containerPort: 1313
+          imagePullPolicy: Always
+      imagePullSecrets:
+        - name: regcred
 ---
 apiVersion: v1
 kind: Service

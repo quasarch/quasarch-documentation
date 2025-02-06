@@ -1,7 +1,7 @@
 
 ---
-title: "Quasarplane Overview"
-linkTitle: "Quasarplane"
+title: "Learn Overview"
+linkTitle: "Learn"
 description: "Overview of the Quasarplane control-plane system."
 ---
 
@@ -12,7 +12,7 @@ Quasarplane is the backbone of [Quasarch Console]() and what makes Quasarch Clou
 It is important to understand how both of these components work together to make the most out of the platform or build your own integrations with Quasarch Cloud Platform.
 
 The following documentation will provide you with everything you need to understand how the platform works and how you can build your own solutions on top of it.
-This documentation will not guide you through the usage of the Console, for that visit the [Console documentation](../containers)
+This documentation will not guide you through the usage of the Console, for that visit the [Console documentation](../Tutorials/containers)
 
 ## Integrating
 

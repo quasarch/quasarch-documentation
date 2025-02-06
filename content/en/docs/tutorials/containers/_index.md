@@ -1,9 +1,10 @@
-
 ---
 title: "Container Service"
 linkTitle: "Container Service"
 weight: 1
 description: Serverless compute for containerized applications on the decentralized cloud.
+categories:
+- Container Service
 ---
 
 Quasarch's Container Service is a decentralized, highly scalable, container management service that makes it easy to run and manage your containers on a serverless infrastructure.

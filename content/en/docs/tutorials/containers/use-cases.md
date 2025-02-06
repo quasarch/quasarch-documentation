@@ -3,6 +3,10 @@ title: "Use Cases"
 linkTitle: "Use Cases"
 weight: 2
 description: What are the uses of a decentralized serverless container service.
+categories:
+  - Container Service
+tags:
+  - containers
 ---
 
 This page features Container Service's core use cases.

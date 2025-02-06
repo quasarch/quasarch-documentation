@@ -1,0 +1,164 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quasarplane Documentation – Container Service</title>
+    <link>//localhost:1313/categories/container-service/</link>
+    <description>Recent content in Container Service on Quasarplane Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="//localhost:1313/categories/container-service/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Container Service</title>
+      <link>//localhost:1313/docs/tutorials/containers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/tutorials/containers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Quasarch&amp;rsquo;s Container Service is a decentralized, highly scalable, container management service that makes it easy to run and manage your containers on a serverless infrastructure.
+This infrastructure is managed by Quasarch which launches your services and workloads on a Decentralized Compute Marketplace.&lt;/p&gt;
+&lt;p&gt;By using a decentralized protocol to lease resources from a global network of compute providers, we can offer our users a lower cost, censorship-resistant, localized hosting solution to run containers.
+Container Service also supports a range of Nvidia GPUs to be used by containers.&lt;/p&gt;
+&lt;h2 id=&#34;why-decentralized&#34;&gt;Why decentralized?&lt;/h2&gt;
+&lt;p&gt;Decentralized Physical Infrastructure Networks, also known as DePINs, are open and accessible networks, in contrast with traditional infrastructure that often end up with a centralized entity that dictates the terms and conditions for what users can do with the services provided.
+This can have a direct negative impact on innovation, cost and user-experience.&lt;/p&gt;
+&lt;p&gt;Globally decentralized networks allow projects to be deployed on regions closer to where the business operates, bringing products closer to its users.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/tutorials/containers/user-guide/&#34;&gt;Deploy your first container&lt;/a&gt; on the Decentralized Cloud.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Set up to use Container Service</title>
+      <link>//localhost:1313/docs/tutorials/containers/user-guide/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/tutorials/containers/user-guide/setup/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;sign-up-for-a-quasarch-cloud-account&#34;&gt;Sign up for a Quasarch Cloud account&lt;/h2&gt;
+&lt;p&gt;If you do not have a Quasarch Cloud account, complete the following steps to create one.&lt;/p&gt;
+&lt;p&gt;To sign up for a Quasarch Cloud account&lt;/p&gt;
+&lt;p&gt;Visit &lt;a href=&#34;https://console.quasarch.cloud/register&#34;&gt;https://console.quasarch.cloud/register&lt;/a&gt;.
+Follow the online instructions.&lt;/p&gt;
+&lt;p&gt;Quasarch Cloud sends you a confirmation email after the sign-up process is complete.
+At any time, you can view your current account activity and manage your account by going to &lt;a href=&#34;https://console.quasarch.cloud&#34;&gt;https://console.quasarch.cloud&lt;/a&gt; and clicking on your profile picture.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: User Guide for Container Service</title>
+      <link>//localhost:1313/docs/tutorials/containers/user-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/tutorials/containers/user-guide/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This user guide provides an introduction to decentralized containers and introductory step-by-step procedures to run them on Container Service.
+Docker basics takes you through the basic steps to create a Docker container image and deploy it on Quasarch Cloud.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Deploying on Container Service</title>
+      <link>//localhost:1313/docs/tutorials/containers/user-guide/deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/tutorials/containers/user-guide/deploy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page shows you how to deploy to Container Service a sample container that has already been pushed to a public registry (Docker Hub) in this case.&lt;/p&gt;
+&lt;h2 id=&#34;before-you-begin&#34;&gt;Before you Begin&lt;/h2&gt;
+&lt;p&gt;Make sure you are logged into &lt;a href=&#34;https://console.quasarch.cloud/&#34;&gt;console&lt;/a&gt; and that you have enough credits to continue.
+Be sure to delete all the resources you create after completing this guide so you avoid being charged.&lt;/p&gt;
+&lt;h2 id=&#34;creating-your-container&#34;&gt;Creating your Container&lt;/h2&gt;
+&lt;p&gt;To create a container deployment on Container Service, you&amp;rsquo;ll need to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;From the navigation menu select the &lt;strong&gt;Compute&lt;/strong&gt; dropdown and then click on &lt;strong&gt;Container Service&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Create&lt;/strong&gt; to go to the form to create your container.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;From here you&amp;rsquo;ll have to fill out the container creation form.
+Make sure that you specify a public registry path as &lt;strong&gt;private registries are not yet supported&lt;/strong&gt;.
+Don&amp;rsquo;t forget to include your image tag (when using the latest tag make sure to include &lt;code&gt;latest&lt;/code&gt; in the image).&lt;/p&gt;
+&lt;h3 id=&#34;gpu-settings&#34;&gt;GPU Settings&lt;/h3&gt;
+&lt;p&gt;Container Service supports running containers that leverage GPU support.
+In case you select many different GPU models, your deployment will only run with access to one of those models.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+
+    GPUs can greatly increase the cost of running your container depending on the model.
+
+&lt;/div&gt;
+
+&lt;p&gt;Once you are satisfied with the configuration click on &lt;strong&gt;Create&lt;/strong&gt;.
+This action will redirect you to the container listing page where you&amp;rsquo;ll find your deployment as &lt;em&gt;deploying&lt;/em&gt;.
+Quasarch Console is now waiting for Quasarplane to negotiate and send your container to one of our selected compute providers.
+Once the process is complete you&amp;rsquo;ll see the status of the container has changed to &lt;em&gt;deployed&lt;/em&gt;.
+If something went wrong the container will have its status as &lt;em&gt;failed&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+
+    Currently every container will have its port forwarded to port 80.
+Please make sure you set the &lt;code&gt;port&lt;/code&gt; field correctly to point towards the container&amp;rsquo;s exposed port.
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Use Cases</title>
+      <link>//localhost:1313/docs/tutorials/containers/use-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/tutorials/containers/use-cases/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page features Container Service&amp;rsquo;s core use cases.&lt;/p&gt;
+&lt;p&gt;Note that the full range of potential use cases is broader than what is covered here.&lt;/p&gt;
+&lt;h2 id=&#34;websites-and-web-applications&#34;&gt;Websites and Web Applications&lt;/h2&gt;
+&lt;p&gt;Almost every developer will sooner or later need a place to host their website and applications.
+Container Service provides an easy deployment experience at a fraction of the price of centralized competitors.
+It is perfect for developers that want to host their website without going through the burden of configuring a server and avoiding surprise bills from unwanted usage.
+Quasarch will only charge you for the time your run, not the amount of traffic.
+Censorship-resistance let&amp;rsquo;s you freely express yourself without fear of being silenced.&lt;/p&gt;
+&lt;h2 id=&#34;hpc-workloads&#34;&gt;HPC Workloads&lt;/h2&gt;
+&lt;p&gt;In today&amp;rsquo;s data-driven world, businesses and organizations generate and process massive amounts of data in real-time.
+Whether it&amp;rsquo;s analyzing user behavior on a website, processing sensor data from IoT devices, or conducting financial market analysis, real-time data processing is critical for making informed decisions promptly.
+Big data technologies facilitate the handling of such large volumes of data, and serverless containers enhance the efficiency and scalability of real-time processing tasks.
+Container Service&amp;rsquo;s support of GPUs gives engineers the tools to take on HPC tasks.&lt;/p&gt;
+&lt;h2 id=&#34;content-delivery-networks&#34;&gt;Content Delivery Networks&lt;/h2&gt;
+&lt;p&gt;Decentralized container services can enhance CDNs by deploying containers in various locations across the globe.
+This decentralized approach improves content delivery speeds by serving content from servers that are geographically closer to the end-users.
+Container Service&amp;rsquo;s price model can help engineers build a global CDN for a fraction of the cost.&lt;/p&gt;
+&lt;h2 id=&#34;dapps&#34;&gt;DApps&lt;/h2&gt;
+&lt;p&gt;Blockchain-based decentralized applications can utilize container services to manage and run application components.
+Each component of the DApp can be encapsulated within a container, providing isolation and security.
+Blockchain ensures the integrity and decentralization of the application data and transactions.
+Container Service enables web3 developers to deliver on the promise of decentralization by offering a truly decentralized platform to host containerized DApps.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,50 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/docs/containers/</loc>
-    <lastmod>2023-10-12T00:12:56+01:00</lastmod>
+    <loc>//localhost:1313/docs/tutorials/containers/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/containers/user-guide/setup/</loc>
-    <lastmod>2023-10-12T00:12:56+01:00</lastmod>
+    <loc>//localhost:1313/docs/tutorials/containers/user-guide/setup/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/containers/user-guide/</loc>
-    <lastmod>2023-09-21T22:24:30+01:00</lastmod>
+    <loc>//localhost:1313/docs/tutorials/containers/user-guide/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/containers/user-guide/deploy/</loc>
-    <lastmod>2023-10-14T22:22:21+01:00</lastmod>
+    <loc>//localhost:1313/docs/reference/api-reference/users/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/containers/use-cases/</loc>
-    <lastmod>2023-10-17T22:13:08+01:00</lastmod>
+    <loc>//localhost:1313/docs/reference/api-reference/containers/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/quasarplane/security/</loc>
-    <lastmod>2024-04-23T21:05:28+01:00</lastmod>
+    <loc>//localhost:1313/docs/tutorials/containers/user-guide/deploy/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/docs/tutorials/containers/use-cases/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/docs/reference/api-reference/providers/</loc>
+  </url><url>
+    <loc>//localhost:1313/docs/learn/security/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
     <loc>//localhost:1313/docs/</loc>
     <lastmod>2024-04-23T21:05:28+01:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/docs/reference/api-reference/</loc>
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/quasarplane/payment-and-credit/</loc>
-    <lastmod>2023-10-17T22:13:08+01:00</lastmod>
+    <loc>//localhost:1313/categories/container-service/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/quasarplane/security/privacy/</loc>
-    <lastmod>2024-04-23T21:05:28+01:00</lastmod>
+    <loc>//localhost:1313/tags/containers/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/quasarplane/providers/</loc>
-    <lastmod>2023-10-17T22:13:08+01:00</lastmod>
+    <loc>//localhost:1313/docs/how-to/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/docs/learn/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/docs/learn/payment-and-credit/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/docs/learn/security/privacy/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/docs/learn/providers/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
     <lastmod>2023-10-17T22:13:08+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/quasarplane/</loc>
-    <lastmod>2024-04-23T21:05:28+01:00</lastmod>
+    <loc>//localhost:1313/docs/reference/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/quasarplane/regions/</loc>
-    <lastmod>2024-04-23T21:05:28+01:00</lastmod>
+    <loc>//localhost:1313/docs/learn/regions/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url><url>
     <loc>//localhost:1313/search/</loc>
     <lastmod>2023-07-10T00:22:17+01:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/docs/tutorials/</loc>
+    <lastmod>2024-05-12T23:23:19+01:00</lastmod>
   </url>
 </urlset>

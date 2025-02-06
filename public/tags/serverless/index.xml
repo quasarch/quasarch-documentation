@@ -1,0 +1,53 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quasarplane Documentation – Serverless</title>
+    <link>//localhost:1313/tags/serverless/</link>
+    <description>Recent content in Serverless on Quasarplane Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="//localhost:1313/tags/serverless/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Use Cases</title>
+      <link>//localhost:1313/docs/tutorials/containers/use-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/tutorials/containers/use-cases/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page features Container Service&amp;rsquo;s core use cases.&lt;/p&gt;
+&lt;p&gt;Note that the full range of potential use cases is broader than what is covered here.&lt;/p&gt;
+&lt;h2 id=&#34;websites-and-web-applications&#34;&gt;Websites and Web Applications&lt;/h2&gt;
+&lt;p&gt;Almost every developer will sooner or later need a place to host their website and applications.
+Container Service provides an easy deployment experience at a fraction of the price of centralized competitors.
+It is perfect for developers that want to host their website without going through the burden of configuring a server and avoiding surprise bills from unwanted usage.
+Quasarch will only charge you for the time your run, not the amount of traffic.
+Censorship-resistance let&amp;rsquo;s you freely express yourself without fear of being silenced.&lt;/p&gt;
+&lt;h2 id=&#34;hpc-workloads&#34;&gt;HPC Workloads&lt;/h2&gt;
+&lt;p&gt;In today&amp;rsquo;s data-driven world, businesses and organizations generate and process massive amounts of data in real-time.
+Whether it&amp;rsquo;s analyzing user behavior on a website, processing sensor data from IoT devices, or conducting financial market analysis, real-time data processing is critical for making informed decisions promptly.
+Big data technologies facilitate the handling of such large volumes of data, and serverless containers enhance the efficiency and scalability of real-time processing tasks.
+Container Service&amp;rsquo;s support of GPUs gives engineers the tools to take on HPC tasks.&lt;/p&gt;
+&lt;h2 id=&#34;content-delivery-networks&#34;&gt;Content Delivery Networks&lt;/h2&gt;
+&lt;p&gt;Decentralized container services can enhance CDNs by deploying containers in various locations across the globe.
+This decentralized approach improves content delivery speeds by serving content from servers that are geographically closer to the end-users.
+Container Service&amp;rsquo;s price model can help engineers build a global CDN for a fraction of the cost.&lt;/p&gt;
+&lt;h2 id=&#34;dapps&#34;&gt;DApps&lt;/h2&gt;
+&lt;p&gt;Blockchain-based decentralized applications can utilize container services to manage and run application components.
+Each component of the DApp can be encapsulated within a container, providing isolation and security.
+Blockchain ensures the integrity and decentralization of the application data and transactions.
+Container Service enables web3 developers to deliver on the promise of decentralization by offering a truly decentralized platform to host containerized DApps.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

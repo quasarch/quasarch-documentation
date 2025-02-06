@@ -1,4 +1,4 @@
 ---
-title: "Reference"
-linkTitle: "Reference"
+title: "Tutorials"
+linkTitle: "Tutorials"
 ---

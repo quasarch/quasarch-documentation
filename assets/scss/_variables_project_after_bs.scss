@@ -1,1 +1,3 @@
-
+@include color-mode(dark, true) {
+  --bs-body-bg: #{$dark};
+}

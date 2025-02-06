@@ -5,3 +5,43 @@
 .td-navbar .navbar-brand svg {
     width: 100%;
 }
+
+@include color-mode(dark, true) {
+  .td-sidebar {
+      background-color: $dark;
+      border-color: lighten($dark, 5%);
+
+      nav.foldable-nav .ul-1 .with-child > label:before {
+        color: $primary;
+      }
+
+      .td-sidebar-nav {
+
+        a:hover {
+            color: inherit;
+            font-weight: bold;
+        }
+      }
+  }
+
+  .td-sidebar-toc {
+    background-color: $dark;
+    border-color: lighten($dark, 5%);
+  }
+
+  .dropdown-item.active, .dropdown-item:active {
+    background-image: none;
+  }
+
+  .dropdown-item:hover {
+       background-image: none;
+  }
+
+  .taxonomy-term {
+    background-color: lighten($dark, 5%);
+
+    &:hover {
+        background-color: $primary;
+    }
+  }
+}

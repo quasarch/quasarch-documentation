@@ -46,7 +46,7 @@ https://github.com/google/docsy/tree/main/assets/scss
   --bs-warning: #F0AD4E;
   --bs-danger: #BB2124;
   --bs-light: #d3f3ee;
-  --bs-dark: #000000;
+  --bs-dark: #272727;
   --bs-primary-rgb: 75, 87, 152;
   --bs-secondary-rgb: 202, 57, 48;
   --bs-success-rgb: 34, 187, 51;
@@ -54,7 +54,7 @@ https://github.com/google/docsy/tree/main/assets/scss
   --bs-warning-rgb: 240, 173, 78;
   --bs-danger-rgb: 187, 33, 36;
   --bs-light-rgb: 211, 243, 238;
-  --bs-dark-rgb: 0, 0, 0;
+  --bs-dark-rgb: 39, 39, 39;
   --bs-primary-text-emphasis: #1e233d;
   --bs-secondary-text-emphasis: #511713;
   --bs-success-text-emphasis: #0e4b14;
@@ -1615,13 +1615,13 @@ progress {
 
 .table-dark {
   --bs-table-color: #fff;
-  --bs-table-bg: #000000;
-  --bs-table-border-color: #333333;
-  --bs-table-striped-bg: #0d0d0d;
+  --bs-table-bg: #272727;
+  --bs-table-border-color: #525252;
+  --bs-table-striped-bg: #323232;
   --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #1a1a1a;
+  --bs-table-active-bg: #3d3d3d;
   --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #131313;
+  --bs-table-hover-bg: #373737;
   --bs-table-hover-color: #fff;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color); }
@@ -2521,19 +2521,19 @@ div.drawio .input-group-sm > button,
 
 .btn-dark {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #000000;
-  --bs-btn-border-color: #000000;
+  --bs-btn-bg: #272727;
+  --bs-btn-border-color: #272727;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #262626;
-  --bs-btn-hover-border-color: #1a1a1a;
-  --bs-btn-focus-shadow-rgb: 38, 38, 38;
+  --bs-btn-hover-bg: #474747;
+  --bs-btn-hover-border-color: #3d3d3d;
+  --bs-btn-focus-shadow-rgb: 71, 71, 71;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #333333;
-  --bs-btn-active-border-color: #1a1a1a;
+  --bs-btn-active-bg: #525252;
+  --bs-btn-active-border-color: #3d3d3d;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #000000;
-  --bs-btn-disabled-border-color: #000000; }
+  --bs-btn-disabled-bg: #272727;
+  --bs-btn-disabled-border-color: #272727; }
 
 .btn-outline-primary, div.drawio button {
   --bs-btn-color: #4B5798;
@@ -2648,19 +2648,19 @@ div.drawio .input-group-sm > button,
   --bs-gradient: none; }
 
 .btn-outline-dark {
-  --bs-btn-color: #000000;
-  --bs-btn-border-color: #000000;
+  --bs-btn-color: #272727;
+  --bs-btn-border-color: #272727;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #000000;
-  --bs-btn-hover-border-color: #000000;
-  --bs-btn-focus-shadow-rgb: 0, 0, 0;
+  --bs-btn-hover-bg: #272727;
+  --bs-btn-hover-border-color: #272727;
+  --bs-btn-focus-shadow-rgb: 39, 39, 39;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #000000;
-  --bs-btn-active-border-color: #000000;
+  --bs-btn-active-bg: #272727;
+  --bs-btn-active-border-color: #272727;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #000000;
+  --bs-btn-disabled-color: #272727;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #000000;
+  --bs-btn-disabled-border-color: #272727;
   --bs-gradient: none; }
 
 .btn-link {
@@ -5754,8 +5754,8 @@ div.drawio .input-group-sm > button,
   color: RGBA(var(--bs-dark-rgb), var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(var(--bs-dark-rgb), var(--bs-link-underline-opacity, 1)) !important; }
   .link-dark:hover, .link-dark:focus {
-    color: RGBA(0, 0, 0, var(--bs-link-opacity, 1)) !important;
-    text-decoration-color: RGBA(0, 0, 0, var(--bs-link-underline-opacity, 1)) !important; }
+    color: RGBA(27, 27, 27, var(--bs-link-opacity, 1)) !important;
+    text-decoration-color: RGBA(27, 27, 27, var(--bs-link-underline-opacity, 1)) !important; }
 
 .link-body-emphasis {
   color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-opacity, 1)) !important;
@@ -17179,10 +17179,9 @@ readers do not read off random characters that represent icons */
 .fa-steam-symbol:before {
   content: "\f3f6"; }
 
-/*
-Projects can override this file. For details, see:
-https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
-*/
+[data-bs-theme="dark"] {
+  --bs-body-bg: #272727; }
+
 .td-border-top {
   border: none;
   border-top: 1px solid #eee; }
@@ -17207,7 +17206,7 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
     bottom: 0;
     left: 0; }
   .td-overlay--dark::after {
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(39, 39, 39, 0.3); }
   .td-overlay--light::after {
     background-color: rgba(211, 243, 238, 0.3); }
   .td-overlay__inner {
@@ -17488,15 +17487,15 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
 
 .-bg-dark {
   color: #fff;
-  background-color: #000000; }
+  background-color: #272727; }
 
 .-bg-dark p:not(.p-initial) > a {
-  color: white; }
+  color: #dae9ff; }
   .-bg-dark p:not(.p-initial) > a:hover {
     color: #094db1; }
 
 .-text-dark {
-  color: #000000; }
+  color: #272727; }
 
 .-bg-100 {
   color: #000;
@@ -17608,15 +17607,15 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
 
 .-bg-0 {
   color: #fff;
-  background-color: #000000; }
+  background-color: #272727; }
 
 .-bg-0 p:not(.p-initial) > a {
-  color: white; }
+  color: #dae9ff; }
   .-bg-0 p:not(.p-initial) > a:hover {
     color: #094db1; }
 
 .-text-0 {
-  color: #000000; }
+  color: #272727; }
 
 .-bg-1 {
   color: #fff;
@@ -17704,15 +17703,15 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
 
 .-bg-8 {
   color: #fff;
-  background-color: #000000; }
+  background-color: #272727; }
 
 .-bg-8 p:not(.p-initial) > a {
-  color: white; }
+  color: #dae9ff; }
   .-bg-8 p:not(.p-initial) > a:hover {
     color: #094db1; }
 
 .-text-8 {
-  color: #000000; }
+  color: #272727; }
 
 .-bg-9 {
   color: #fff;
@@ -17794,22 +17793,22 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
 
 .td-box--0 {
   color: #fff;
-  background-color: #000000; }
+  background-color: #272727; }
   .td-box--0 .td-arrow-down::before {
     left: 50%;
     margin-left: -30px;
     bottom: -25px;
     border-style: solid;
     border-width: 25px 30px 0 30px;
-    border-color: #000000 transparent transparent transparent;
+    border-color: #272727 transparent transparent transparent;
     z-index: 3;
     position: absolute;
     content: ""; }
 
 .td-box--0 p > a, .td-box--0 span > a {
-  color: white; }
+  color: #dae9ff; }
   .td-box--0 p > a:hover, .td-box--0 span > a:hover {
-    color: white; }
+    color: #e5f0ff; }
 
 .td-box--1 {
   color: #fff;
@@ -17946,22 +17945,22 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
 
 .td-box--8 {
   color: #fff;
-  background-color: #000000; }
+  background-color: #272727; }
   .td-box--8 .td-arrow-down::before {
     left: 50%;
     margin-left: -30px;
     bottom: -25px;
     border-style: solid;
     border-width: 25px 30px 0 30px;
-    border-color: #000000 transparent transparent transparent;
+    border-color: #272727 transparent transparent transparent;
     z-index: 3;
     position: absolute;
     content: ""; }
 
 .td-box--8 p > a, .td-box--8 span > a {
-  color: white; }
+  color: #dae9ff; }
   .td-box--8 p > a:hover, .td-box--8 span > a:hover {
-    color: white; }
+    color: #e5f0ff; }
 
 .td-box--9 {
   color: #fff;
@@ -18440,22 +18439,22 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
 
 .td-box--dark, .td-footer {
   color: #fff;
-  background-color: #000000; }
+  background-color: #272727; }
   .td-box--dark .td-arrow-down::before, .td-footer .td-arrow-down::before {
     left: 50%;
     margin-left: -30px;
     bottom: -25px;
     border-style: solid;
     border-width: 25px 30px 0 30px;
-    border-color: #000000 transparent transparent transparent;
+    border-color: #272727 transparent transparent transparent;
     z-index: 3;
     position: absolute;
     content: ""; }
 
 .td-box--dark p > a, .td-footer p > a, .td-box--dark span > a, .td-footer span > a {
-  color: white; }
+  color: #dae9ff; }
   .td-box--dark p > a:hover, .td-footer p > a:hover, .td-box--dark span > a:hover, .td-footer span > a:hover {
-    color: white; }
+    color: #e5f0ff; }
 
 .td-box--100 {
   color: #000;
@@ -18667,10 +18666,10 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
       right: 4px;
       top: 2px; }
       .td-content .highlight pre button.td-click-to-copy:hover {
-        color: #000000;
+        color: #272727;
         background-color: #ced4da; }
       .td-content .highlight pre button.td-click-to-copy:active {
-        color: #000000;
+        color: #272727;
         background-color: #ced4da;
         transform: translateY(2px); }
 
@@ -18713,7 +18712,7 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
   .td-navbar-cover {
     background: transparent !important; }
     .td-navbar-cover .nav-link {
-      text-shadow: 1px 1px 2px #000000; } }
+      text-shadow: 1px 1px 2px #272727; } }
 
 .td-navbar-cover.navbar-bg-onscroll .nav-link {
   text-shadow: none; }
@@ -19066,10 +19065,10 @@ nav.foldable-nav .with-child ul {
       color: #d3f3ee; }
   .alert-dark, .pageinfo-dark {
     border-style: solid;
-    border-color: #000000;
+    border-color: #272727;
     border-width: 0 0 0 4px; }
     .alert-dark .alert-heading, .pageinfo-dark .alert-heading {
-      color: #000000; }
+      color: #272727; }
 
 .td-content {
   order: 1; }
@@ -19406,7 +19405,7 @@ h6:hover > .td-heading-self-link, .h6:hover > .td-heading-self-link {
     background-color: #4B5798;
     color: #fff; }
     .taxonomy-term:hover .taxonomy-count {
-      color: #000000 !important; }
+      color: #272727 !important; }
   .taxonomy-term:hover::before {
     background: #4B5798; }
 
@@ -19429,7 +19428,7 @@ h6:hover > .td-heading-self-link, .h6:hover > .td-heading-self-link {
     background: none;
     color: #0d6efd; }
     .taxo-text-tags .taxonomy-term:hover .taxonomy-count {
-      color: #000000 !important; }
+      color: #272727 !important; }
   .taxo-text-tags .taxonomy-term:hover::before {
     background: none; }
 
@@ -19498,7 +19497,7 @@ h6:hover > .td-heading-self-link, .h6:hover > .td-heading-self-link {
     background: none;
     color: #0d6efd; }
     .taxo-fruits .taxonomy-term:hover .taxonomy-count {
-      color: #000000 !important; }
+      color: #272727 !important; }
   .taxo-fruits .taxonomy-term:hover::before {
     background: none;
     text-shadow: 0 0 3px #212529; }
@@ -19641,7 +19640,7 @@ div.drawioframe {
     border-color: #d3f3ee; }
   .tab-body-dark {
     border-style: solid;
-    border-color: #000000; }
+    border-color: #272727; }
 
 .td-card.card .highlight {
   border: none;
@@ -19708,5 +19707,29 @@ div.drawioframe {
 
 .td-navbar .navbar-brand svg {
   width: 100%; }
+
+[data-bs-theme="dark"] .td-sidebar {
+  background-color: #272727;
+  border-color: #343434; }
+  [data-bs-theme="dark"] .td-sidebar nav.foldable-nav .ul-1 .with-child > label:before {
+    color: #4B5798; }
+  [data-bs-theme="dark"] .td-sidebar .td-sidebar-nav a:hover {
+    color: inherit;
+    font-weight: bold; }
+
+[data-bs-theme="dark"] .td-sidebar-toc {
+  background-color: #272727;
+  border-color: #343434; }
+
+[data-bs-theme="dark"] .dropdown-item.active, [data-bs-theme="dark"] .dropdown-item:active {
+  background-image: none; }
+
+[data-bs-theme="dark"] .dropdown-item:hover {
+  background-image: none; }
+
+[data-bs-theme="dark"] .taxonomy-term {
+  background-color: #343434; }
+  [data-bs-theme="dark"] .taxonomy-term:hover {
+    background-color: #4B5798; }
 
 /*# sourceMappingURL=main.css.map */

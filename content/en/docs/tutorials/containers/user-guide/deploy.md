@@ -3,6 +3,8 @@ title: "Deploying on Container Service"
 linkTitle: "Deploying on Container Service"
 weight: 2
 description: Learn how to deploy a container on Quasarch Container Service.
+categories:
+  - Container Service
 ---
 
 This page shows you how to deploy to Container Service a sample container that has already been pushed to a public registry (Docker Hub) in this case.

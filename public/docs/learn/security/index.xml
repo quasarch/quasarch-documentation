@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quasarplane Documentation – Security in Quasarplane</title>
+    <link>//localhost:1313/docs/learn/security/</link>
+    <description>Recent content in Security in Quasarplane on Quasarplane Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="//localhost:1313/docs/learn/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Privacy</title>
+      <link>//localhost:1313/docs/learn/security/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/learn/security/privacy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As a solution that enables Tenants with self-sovereignty over their data, Tenants can choose where they want to run their workloads and store their data.
+Quasarch Cloud Platform can serve as a privacy layer between Tenants and &lt;a href=&#34;//localhost:1313/docs/learn/providers/&#34;&gt;Providers&lt;/a&gt;.
+Providers do not have access to the Quasarch Cloud Platform account that is accessing resources.&lt;/p&gt;
+&lt;h2 id=&#34;compute-providers-data-access&#34;&gt;Compute Providers Data Access&lt;/h2&gt;
+&lt;p&gt;Compute Providers will run Tenant workloads on their infrastructure and by deploying Tenants are trusting them with their data.
+They are required to manage workloads in a secure and responsible way and provide transparency to their Tenants.&lt;/p&gt;
+&lt;p&gt;Compute Providers might have access to the following data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Environment variables&lt;/li&gt;
+&lt;li&gt;Unencrypted files&lt;/li&gt;
+&lt;li&gt;Unencrypted network traffic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is recommended that you design your applications with an emphasis on security whether you are trusting a centralized Cloud Provider or a decentralized Cloud Provider.
+At any time Tenants can query Provider data to help them make informed choices based on their specific requirements for security.
+For more information on what attributes you can have query check the &lt;a href=&#34;../api-reference&#34;&gt;Providers API Reference&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

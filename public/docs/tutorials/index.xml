@@ -1,0 +1,41 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quasarplane Documentation – Tutorials</title>
+    <link>//localhost:1313/docs/tutorials/</link>
+    <description>Recent content in Tutorials on Quasarplane Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="//localhost:1313/docs/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Container Service</title>
+      <link>//localhost:1313/docs/tutorials/containers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/docs/tutorials/containers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Quasarch&amp;rsquo;s Container Service is a decentralized, highly scalable, container management service that makes it easy to run and manage your containers on a serverless infrastructure.
+This infrastructure is managed by Quasarch which launches your services and workloads on a Decentralized Compute Marketplace.&lt;/p&gt;
+&lt;p&gt;By using a decentralized protocol to lease resources from a global network of compute providers, we can offer our users a lower cost, censorship-resistant, localized hosting solution to run containers.
+Container Service also supports a range of Nvidia GPUs to be used by containers.&lt;/p&gt;
+&lt;h2 id=&#34;why-decentralized&#34;&gt;Why decentralized?&lt;/h2&gt;
+&lt;p&gt;Decentralized Physical Infrastructure Networks, also known as DePINs, are open and accessible networks, in contrast with traditional infrastructure that often end up with a centralized entity that dictates the terms and conditions for what users can do with the services provided.
+This can have a direct negative impact on innovation, cost and user-experience.&lt;/p&gt;
+&lt;p&gt;Globally decentralized networks allow projects to be deployed on regions closer to where the business operates, bringing products closer to its users.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/tutorials/containers/user-guide/&#34;&gt;Deploy your first container&lt;/a&gt; on the Decentralized Cloud.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
